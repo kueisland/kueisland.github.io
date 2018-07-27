@@ -52,8 +52,20 @@
         }
 
         .scroll-content-hide {
-
+            animation:scroll-hide 1s ease 0s forwards;
         }
+
+        @keyframes scroll-hide{
+            from{
+                transform:translateY(0);
+                opacity:1;
+            }
+            to {
+                transform: translateY(-150vh);
+                opacity:0;
+            }
+        }
+
         #vidtop-content {
             position: fixed;
             top: calc(50% - 155px);
@@ -61,6 +73,22 @@
             width: 250px;
             height: 310px;
             color: #fff;
+        }
+        .vidtop-content-show {
+            display:block;
+            animation: vidtop-show 1s ease 0s forwards;
+        }
+
+        @keyframes vidtop-show{
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0%);
+                opacity: 1;
+            }
         }
 
         .vid-info {
@@ -226,7 +254,13 @@
 
     /*顯示選單*/
     function showMenu() {
-        document.getElementById("scroll-content").style.display = "none";
+        document.getElementById("scroll-content").classList.add("scroll-content-hide");
         document.getElementById("vidtop-content").style.display = "block";
+        document.getElementById("vidtop-content").classList.add("vidtop-content-show");
+        setTimeout(function () {
+            document.getElementById("scroll-content").style.display = "none";
+            document.getElementById("scroll-content").classList.remove("scroll-content-hide");
+            document.getElementById("vidtop-content").classList.remove("vidtop-content-show");
+        },1000);
     }
 </script>

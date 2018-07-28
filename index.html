@@ -15,7 +15,15 @@
             width: 100%;
             height: 100%;
         }
-
+        .subpage {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            display:none;
+        }
         .loadpage-wave {
             position: fixed;
             top: 0;
@@ -52,7 +60,13 @@
             border: 0px;
             overflow: hidden;
         }
-
+        .subpage iframe {
+            width: 100%;
+            height: 100%;
+            border: 0px;
+            background-color:rgba(0,0,0,0.5);
+            overflow: scroll;
+        }
         .loadpage {
             position: fixed;
             top: 100%;
@@ -91,6 +105,23 @@
             }
         }
 
+        .load-show-2 {
+            display: block;
+            animation: load-show-2 1s ease 0s forwards;
+        }
+
+        @keyframes load-show-2 {
+            from {
+                transform: translateY(-100%);
+                opacity:1;
+            }
+
+            to {
+                transform: translateY(-100%);
+                opacity:0;
+            }
+        }
+
         .load-hide {
             display: block;
             transform: translateY(-100%);
@@ -107,6 +138,24 @@
             }
         }
 
+        .load-hide-2 {
+            display: block;
+            transform: translateY(-100%);
+            animation: load-hide-2 1s ease 0s forwards;
+        }
+
+        @keyframes load-hide-2 {
+            from {
+                transform: translateY(-100%);
+                opacity:0;
+            }
+
+            to {
+                transform: translateY(-100%);
+                opacity:1;
+            }
+        }
+
         .setload {
             display: block;
             transform: translateY(-100%);
@@ -116,6 +165,9 @@
 <body>
     <div class="homepage">
         <iframe id="homepage" src=""></iframe>
+    </div>
+    <div class="subpage">
+        <iframe id="subpage" src=""></iframe>
     </div>
     <div id="loadpage-wave" class="loadpage-wave">
 
@@ -129,7 +181,23 @@
 </body>
 </html>
 <script>
-    
+    function resetLoad() {
+        document.getElementById("loadpage-wave").classList.remove("setload");
+        document.getElementById("loadpage").classList.remove("setload");
+        document.getElementById("loadpage-2").classList.remove("setload");
+        document.getElementById("loadpage-wave").classList.remove("load-show");
+        document.getElementById("loadpage").classList.remove("load-show");
+        document.getElementById("loadpage-2").classList.remove("load-show");
+        document.getElementById("loadpage-wave").classList.remove("load-show-2");
+        document.getElementById("loadpage").classList.remove("load-show-2");
+        document.getElementById("loadpage-2").classList.remove("load-show-2");
+        document.getElementById("loadpage-wave").classList.remove("load-hide");
+        document.getElementById("loadpage").classList.remove("load-hide");
+        document.getElementById("loadpage-2").classList.remove("load-hide");
+        document.getElementById("loadpage-wave").classList.remove("load-hide-2");
+        document.getElementById("loadpage").classList.remove("load-hide-2");
+        document.getElementById("loadpage-2").classList.remove("load-hide-2");
+    }
     function addLoad() {
         document.getElementById("loadpage-wave").classList.add("setload");
         document.getElementById("loadpage").classList.add("setload");
@@ -148,7 +216,23 @@
             document.getElementById("loadpage-wave").classList.remove("load-show");
             document.getElementById("loadpage").classList.remove("load-show");
             document.getElementById("loadpage-2").classList.remove("load-show");
+            document.getElementById("loadpage-wave").classList.add("setload");
+            document.getElementById("loadpage").classList.add("setload");
+            document.getElementById("loadpage-2").classList.add("setload");
         }, 5000);
+    }
+    function LoadShow2() {
+        document.getElementById("loadpage-wave").classList.add("load-show-2");
+        document.getElementById("loadpage").classList.add("load-show-2");
+        document.getElementById("loadpage-2").classList.add("load-show-2");
+        setTimeout(function () {
+            document.getElementById("loadpage-wave").classList.remove("load-show-2");
+            document.getElementById("loadpage").classList.remove("load-show-2");
+            document.getElementById("loadpage-2").classList.remove("load-show-2");
+            document.getElementById("loadpage-wave").classList.add("setload");
+            document.getElementById("loadpage").classList.add("setload");
+            document.getElementById("loadpage-2").classList.add("setload");
+        }, 1000);
     }
     function LoadHide() {
         document.getElementById("loadpage-wave").classList.add("load-hide");
@@ -163,6 +247,30 @@
             document.getElementById("loadpage-2").classList.remove("setload");
         }, 5000);
     }
+    function LoadHide2() {
+        document.getElementById("loadpage-wave").classList.add("load-hide-2");
+        document.getElementById("loadpage").classList.add("load-hide-2");
+        document.getElementById("loadpage-2").classList.add("load-hide-2");
+        setTimeout(function () {
+            document.getElementById("loadpage-wave").classList.remove("load-hide-2");
+            document.getElementById("loadpage").classList.remove("load-hide-2");
+            document.getElementById("loadpage-2").classList.remove("load-hide-2");
+            document.getElementById("loadpage-wave").classList.remove("setload");
+            document.getElementById("loadpage").classList.remove("setload");
+            document.getElementById("loadpage-2").classList.remove("setload");
+        }, 5000);
+    }
+
+    function homeToSubPage(url) {
+        resetLoad();
+        LoadShow();
+        setTimeout(function () {
+            document.getElementById("subpage").src = url;
+            document.getElementById("subpage").style.display = "block";
+            addLoad();
+        }, 5000);
+    }
+
     addLoad();
 
     setTimeout(function () {

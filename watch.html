@@ -131,8 +131,8 @@
 <body>
     <div class="all">
         <div class="topnav" id="myTopnav">
-            <a href="#home">龜山島</a>
-            <a href="#news">概要</a>
+            <a href="javascript:window.top.subToHomePage();">龜山島</a>
+            <a href="javascript:window.top.subToSubPage('outline.hmtl');">概要</a>
             <a href="#contact" class="active">
                 賞鯨追豚
             </a>
@@ -239,6 +239,12 @@
 
   setTimeout(function(){
     showSwiper(parseInt(document.getElementById("showSlideId").innerHTML));
-  },100);
+    }, 100);
+
+    window.top.resetLoad();
+    window.top.LoadHide2();
+    setTimeout(function () {
+        window.top.removeLoad();
+    }, 1500);
 </script>
 </html>

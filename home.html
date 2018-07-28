@@ -51,7 +51,7 @@
 
         #scroll-content {
             position: fixed;
-            top: calc(75% - 470px);
+            top: calc(55% - 470px);
             left: calc(50% - 250px);
             width: 500px;
             color: #fff;
@@ -105,6 +105,56 @@
             animation: scroll-hide 1s ease 0s forwards;
         }
 
+        @media only screen and (max-width: 2560px) {
+            #scroll-content {
+                position: fixed;
+                top: calc(75% - 470px);
+                left: calc(50% - 250px);
+                width: 500px;
+                color: #fff;
+            }
+
+                #scroll-content > h1 {
+                    margin: 0 calc(50% - 21.5px);
+                    margin-bottom: 77px;
+                    font-size: 36px;
+                    text-align: center;
+                }
+
+                #scroll-content > div {
+                    font-size: 18ox;
+                    text-align: center;
+                    margin: 12vh 0;
+                }
+
+            .scroll-content-div1 {
+                width: 350px;
+                margin: 0 75px !important;
+            }
+
+            .scroll-content-div3 {
+                width: 168px;
+                margin: 0 166px !important;
+            }
+
+            #scroll-content a {
+                display: block;
+                color: #fff;
+                text-decoration: none;
+                width: 130px;
+                margin: 5vh calc(50% - 65px);
+                padding: 0;
+                height: 59px;
+                padding: 15px 0;
+                font-size: 24px;
+                background: rgba(0,130,190,0.5);
+                transition: .6s background;
+                border-bottom: none;
+                margin: 10px auto;
+                text-align: center;
+            }
+        }
+
         @media only screen and (max-width: 799px) {
             #scroll-content {
                 position: fixed;
@@ -153,6 +203,56 @@
                     margin: 2vw auto;
                     text-align: center;
                 }
+        }
+
+        @media only screen and (max-width: 240px) {
+            #scroll-content {
+                position: fixed;
+                top: calc(30% - (38.5px + 18vw));
+                left: 10px;
+                width: calc(100% - 20px);
+                color: #fff;
+            }
+
+                #scroll-content > h1 {
+                    margin: 0 calc(50% - 6vw);
+                    margin-bottom: 5vh;
+                    font-size: 12vw;
+                    text-align: center;
+                }
+
+                #scroll-content > div {
+                    font-size: 4vw;
+                    text-align: center;
+                    margin: 0 0;
+                }
+
+            .scroll-content-div1 {
+                width: 58vw;
+                margin: 0 calc(21vw - 10px) !important;
+            }
+
+            .scroll-content-div3 {
+                width: 46vw;
+                margin: 0 calc(27vw - 10px) !important;
+            }
+
+            #scroll-content a {
+                display: block;
+                color: #fff;
+                text-decoration: none;
+                width: 20vw;
+                margin: 5vh calc(50% - 65px);
+                padding: 5vw 0;
+                height: 15vw;
+                padding: 4vw 0;
+                font-size: 5vw;
+                background: rgba(0,130,190,0.5);
+                transition: .6s background;
+                border-bottom: none;
+                margin: 2vw auto;
+                text-align: center;
+            }
         }
 
         @keyframes scroll-hide {

@@ -31,6 +31,22 @@
                 pointer-events: none;
             }
 
+        .slide-background {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -99;
+        }
+
+        .mySlides {
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position:center;
+            display: none;
+        }
+
         #scroll-content {
             position: fixed;
             top: calc(100% - 470px);
@@ -220,10 +236,17 @@
 <body>
     <p id="isfirstplay" style="display: none;">0</p>
     <p id="isopenaudio" style="display: none;">0</p>
-    <div class="video-background" onclick="changeAudio()">
+    <div id="video-background" class="video-background" onclick="changeAudio()">
         <div class="video-foreground">
             <div id="ytplayer"></div>
 
+        </div>
+    </div>
+    <div id="slide-background" class="slide-background">
+        <div class="w3-content w3-section" style="max-width:500px">
+            <div class="mySlides" style="background-image:url('image/slide-01');"></div>
+            <div class="mySlides" style="background-image:url('image/slide-02');"></div>
+            <div class="mySlides" style="background-image:url('image/slide-03');"></div>
         </div>
     </div>
     <div id="scroll-content">
@@ -251,6 +274,7 @@
     console.log(screen.width);
 
     if (screen.width > 799) {
+        document.getElementById("slide-background").style.display = "none";
         //<iframe src="https://www.youtube.com/embed/CUl4C1QBw-I?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&playlist=CUl4C1QBw-I" frameborder="0" allowfullscreen></iframe>
         // Load the IFrame Player API code asynchronously.
         var tag = document.createElement('script');
@@ -334,6 +358,24 @@
             }
         }
     } else {
+        document.getElementById("video-background").style.display = "none";
+
+        var myIndex = 0;
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 5000); // Change image every 2 seconds
+        }
+
+        carousel();
+
         window.top.LoadHide();
         setTimeout(function () {
             window.top.removeLoad();

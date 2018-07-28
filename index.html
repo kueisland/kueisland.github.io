@@ -290,12 +290,12 @@
     var mcontents = null;
 
     setTimeout(function () {
+        document.getElementById("homepage").src = "home.html";
+
         $('#homepage').load(function () {
             var $iframe = $(this),
                 mcontents = $iframe.contents();
         });
-
-        document.getElementById("homepage").src = "home.html";
     }, 100);
 
     function setvidtopdisplay(str) {

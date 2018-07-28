@@ -271,6 +271,20 @@
         }, 5000);
     }
 
+    function subToHomePage() {
+        resetLoad();
+        LoadShow2();
+        setTimeout(function () {
+            addLoad();
+            document.getElementById("subpage").src = "";
+            document.getElementById("divsubpage").style.display = "none";
+            setTimeout(function () {
+                resetLoad();
+                LoadHide2();
+            }, 100);
+        }, 1500);
+    }
+
     addLoad();
 
     setTimeout(function () {

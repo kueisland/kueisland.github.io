@@ -40,6 +40,16 @@
             z-index: -99;
         }
 
+        .rgba-background {
+            background-color:rgba(0,0,0,0.5);
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -98;
+        }
+
         .mySlides {
             width:100%;
             height:100%;
@@ -349,7 +359,7 @@
 <body>
     <p id="isfirstplay" style="display: none;">0</p>
     <p id="isopenaudio" style="display: none;">0</p>
-    <div id="video-background" class="video-background" onclick="changeAudio()">
+    <div id="video-background" class="video-background">
         <div class="video-foreground">
             <div id="ytplayer"></div>
 
@@ -364,15 +374,17 @@
             <div class="mySlides" style="background-image:url('image/slide-05.jpg');"></div>
         </div>
     </div>
+    <div id="rgba-background" class="rgba-background">
+    </div>
     <div id="scroll-content">
-        <h1 style="background-color:rgba(0,0,0,0.5);">龜山島</h1>
-        <div class="scroll-content-div1" style="background-color:rgba(0,0,0,0.5);">
+        <h1>龜山島</h1>
+        <div class="scroll-content-div1">
             最早的名字叫菸斗嶼；國際海圖名稱為五獅嶼。<br />
             位於蘭陽平原東面的太平洋上一座火山島。<br />
             因外型似浮龜而得名。
         </div>
         <div><a onclick="showMenu()">Enter</a></div>
-        <div class="scroll-content-div3" style="background-color:rgba(0,0,0,0.5);margin-bottom:118px;">龜山島旅客服務中心</div>
+        <div class="scroll-content-div3" style="margin-bottom:118px;">龜山島旅客服務中心</div>
     </div>
     <div id="vidtop-content" style="display:none;">
         <div class="vid-info">

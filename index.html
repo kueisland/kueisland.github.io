@@ -263,6 +263,7 @@
         resetLoad();
         LoadShow();
         setTimeout(function () {
+            setvidtopdisplay('none');
             addLoad();
             document.getElementById("subpage").src = url;
             document.getElementById("divsubpage").style.display = "block";
@@ -273,6 +274,7 @@
         resetLoad();
         LoadShow2();
         setTimeout(function () {
+            setvidtopdisplay('block');
             resetLoad();
             addLoad();
             document.getElementById("subpage").src = "";
@@ -285,7 +287,18 @@
 
     addLoad();
 
+    var mcontents = null;
+
     setTimeout(function () {
+        $('#homepage').load(function () {
+            var $iframe = $(this),
+                mcontents = $iframe.contents();
+        });
+
         document.getElementById("homepage").src = "home.html";
     }, 100);
+
+    function setvidtopdisplay(str) {
+        mcontents.find('#vidtop-content').style.display = str;
+    }
 </script>

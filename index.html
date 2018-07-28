@@ -166,7 +166,7 @@
     <div class="homepage">
         <iframe id="homepage" src=""></iframe>
     </div>
-    <div class="subpage">
+    <div id="divsubpage" class="subpage">
         <iframe id="subpage" src=""></iframe>
     </div>
     <div id="loadpage-wave" class="loadpage-wave">
@@ -265,9 +265,9 @@
         resetLoad();
         LoadShow();
         setTimeout(function () {
-            document.getElementById("subpage").src = url;
-            document.getElementById("subpage").style.display = "block";
             addLoad();
+            document.getElementById("subpage").src = url;
+            document.getElementById("divsubpage").style.display = "block";
         }, 5000);
     }
 

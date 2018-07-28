@@ -107,18 +107,18 @@
 
         .load-show-2 {
             display: block;
-            animation: load-show-2 1s ease 0s forwards;
+            animation: load-show-2 1.5s ease 0s forwards;
         }
 
         @keyframes load-show-2 {
             from {
                 transform: translateY(-100%);
-                opacity:1;
+                opacity:0;
             }
 
             to {
                 transform: translateY(-100%);
-                opacity:0;
+                opacity:1;
             }
         }
 
@@ -141,18 +141,18 @@
         .load-hide-2 {
             display: block;
             transform: translateY(-100%);
-            animation: load-hide-2 1s ease 0s forwards;
+            animation: load-hide-2 1.5s ease 0s forwards;
         }
 
         @keyframes load-hide-2 {
             from {
                 transform: translateY(-100%);
-                opacity:0;
+                opacity:1;
             }
 
             to {
                 transform: translateY(-100%);
-                opacity:1;
+                opacity:0;
             }
         }
 

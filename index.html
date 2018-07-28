@@ -3,6 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>龜山島</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/w3.css">
@@ -11,10 +12,11 @@
             position: fixed;
             top: 0;
             left: 0;
-            z-index:1;
+            z-index: 1;
             width: 100%;
             height: 100%;
         }
+
         .subpage {
             position: fixed;
             top: 0;
@@ -22,8 +24,9 @@
             z-index: 2;
             width: 100%;
             height: 100%;
-            display:none;
+            display: none;
         }
+
         .loadpage-wave {
             position: fixed;
             top: 0;
@@ -60,13 +63,15 @@
             border: 0px;
             overflow: hidden;
         }
+
         .subpage iframe {
             width: 100%;
             height: 100%;
             border: 0px;
-            background-color:rgba(0,0,0,0.5);
+            background-color: rgba(0,0,0,0.5);
             overflow: scroll;
         }
+
         .loadpage {
             position: fixed;
             top: 100%;
@@ -75,7 +80,7 @@
             width: 100%;
             height: 100%;
             font-size: 24px;
-            background-color:rgb(40,136,159);
+            background-color: rgb(40,136,159);
             display: none;
         }
 
@@ -96,10 +101,11 @@
             animation: load-show 3s ease 0s forwards;
         }
 
-        @keyframes load-show{
-            from{
-                transform:translateY(100%);
+        @keyframes load-show {
+            from {
+                transform: translateY(100%);
             }
+
             to {
                 transform: translateY(-100%);
             }
@@ -113,12 +119,12 @@
         @keyframes load-show-2 {
             from {
                 transform: translateY(-100%);
-                opacity:0;
+                opacity: 0;
             }
 
             to {
                 transform: translateY(-100%);
-                opacity:1;
+                opacity: 1;
             }
         }
 
@@ -147,12 +153,12 @@
         @keyframes load-hide-2 {
             from {
                 transform: translateY(-100%);
-                opacity:1;
+                opacity: 1;
             }
 
             to {
                 transform: translateY(-100%);
-                opacity:0;
+                opacity: 0;
             }
         }
 

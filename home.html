@@ -40,22 +40,21 @@
         }
 
             #scroll-content > h1 {
-                margin:0 calc(50% - 21.5px);
-                margin-bottom:77px;
-                font-size:36px;
+                margin: 0 calc(50% - 21.5px);
+                margin-bottom: 77px;
+                font-size: 36px;
                 text-align: center;
             }
 
             #scroll-content > p {
-                font-size:18ox;
-                text-align:center;
+                font-size: 18ox;
+                text-align: center;
             }
 
-        #scroll-content > p > img{
-            width:72px;
-            margin:0 calc(50% - 36px);
-
-        }
+                #scroll-content > p > img {
+                    width: 72px;
+                    margin: 0 calc(50% - 36px);
+                }
 
             #scroll-content a {
                 display: block;
@@ -80,7 +79,7 @@
                 }
 
         .scroll-content-hide {
-            animation:scroll-hide 1s ease 0s forwards;
+            animation: scroll-hide 1s ease 0s forwards;
         }
 
         @media only screen and (max-width: 799px) {
@@ -115,7 +114,7 @@
                     text-decoration: none;
                     width: 20vw;
                     margin: 5vh calc(50% - 65px);
-                    padding:5vw 0;
+                    padding: 5vw 0;
                     height: 15vw;
                     padding: 4vw 0;
                     font-size: 5vw;
@@ -127,14 +126,15 @@
                 }
         }
 
-        @keyframes scroll-hide{
-            from{
-                transform:translateY(0);
-                opacity:1;
+        @keyframes scroll-hide {
+            from {
+                transform: translateY(0);
+                opacity: 1;
             }
+
             to {
                 transform: translateY(-150vh);
-                opacity:0;
+                opacity: 0;
             }
         }
 
@@ -146,12 +146,13 @@
             height: 310px;
             color: #fff;
         }
+
         .vidtop-content-show {
-            display:block;
+            display: block;
             animation: vidtop-show 1s ease 0s forwards;
         }
 
-        @keyframes vidtop-show{
+        @keyframes vidtop-show {
             from {
                 transform: translateY(150%);
                 opacity: 0;
@@ -173,8 +174,8 @@
         }
 
             .vid-info h1 {
-            	width: 100%;
-            	text-align: center;
+                width: 100%;
+                text-align: center;
                 font-size: 2rem;
                 font-weight: 700;
                 margin-top: 0;
@@ -196,11 +197,11 @@
 
                 .vid-info a:hover {
                     background: rgba(10,80,115,0.5);
-                    color:white;
+                    color: white;
                 }
 
-                @media (min-aspect-ratio: 16/9) {
-                    .video-foreground {
+        @media (min-aspect-ratio: 16/9) {
+            .video-foreground {
                 height: 300%;
                 top: -100%;
             }
@@ -213,6 +214,8 @@
             }
         }
     </style>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 <body>
     <p id="isfirstplay" style="display: none;">0</p>
@@ -348,5 +351,9 @@
             document.getElementById("scroll-content").classList.remove("scroll-content-hide");
             document.getElementById("vidtop-content").classList.remove("vidtop-content-show");
         },1000);
+    }
+
+    function setvidtopdisplay(str) {
+        document.getElementById("vidtop-content").style.display = str;
     }
 </script>

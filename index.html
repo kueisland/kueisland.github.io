@@ -294,10 +294,10 @@
     setTimeout(function () {
         document.getElementById("homepage").src = "home.html";
 
-        mcontents = $('#homepage').contents();
+        mcontents = $("#homepage");
     }, 100);
 
     function setvidtopdisplay(str) {
-        mcontents.find('#vidtop-content').style.display = str;
+        mcontents.get(0).contentWindow.setvidtopdisplay(str);
     }
 </script>

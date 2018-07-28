@@ -293,7 +293,10 @@
         setTimeout(function () {
             resetLoad();
             addLoad();
-            document.getElementById("subpage").src = url;
+            document.getElementById("subpage").src = "";
+            setTimeout(function () {
+                document.getElementById("subpage").src = url;
+            }, 100);
         }, 1500);
     }
 

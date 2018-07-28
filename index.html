@@ -294,10 +294,7 @@
     setTimeout(function () {
         document.getElementById("homepage").src = "home.html";
 
-        $('#homepage').load(function () {
-            var $iframe = $(this),
-                mcontents = $iframe.contents();
-        });
+        mcontents = $('#homepage').contents();
     }, 100);
 
     function setvidtopdisplay(str) {

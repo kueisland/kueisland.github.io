@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
     <link rel="stylesheet" href="https://lokeshdhakar.com/projects/lightbox2/css/lightbox.css">
 
+    <link rel="stylesheet" href="css/topnav.css">
     <style>
         .all {
             width: 100%;
@@ -22,39 +23,58 @@
             text-align: center;
         }
 
+        .text-left {
+            text-align: left;
+        }
+
         .view {
             position: relative;
         }
 
         .swiper-container {
-            width: 100%;
-            height: 730px;
+            width: 800px;
+            height: 50vh;
+            margin: 0 calc(50% - 400px);
         }
 
         .scontainer-2 {
             top: 30%;
-            left: 0;
+            left: calc(50% - 525px);
             width: 250px;
             height: 30%;
             z-index: 100;
             background: blue;
             position: absolute;
+            display: block;
+        }
+
+        .scontainer-3 {
+            width: 100%;
+            min-height: 30vh;
+            z-index: 100;
+            background: blue;
+            display: none;
         }
 
         .swiper-slide-text {
             top: 20%;
-            font-size: 48px;
+            padding-top: calc(100vh / 35);
+            width:100%;
+            font-size: 36px;
             color: white;
+            text-align:center;
             position: absolute;
+            box-sizing:border-box;
         }
 
-        .swiper-slide > img {
-            position: absolute;
-            margin: 0 10%;
-            width: 80%;
+        .swiper-slide > a > img {
+            width: 100%;
         }
 
         .myswiper-slide {
+            display: none;
+        }
+        .myswiper-slide-mobile{
             display: none;
         }
 
@@ -74,6 +94,32 @@
                 transform: translateX(0px);
             }
         }
+
+        @media only screen and (max-width: 1139px) {
+            .scontainer-2 {
+                top: 30%;
+                left: 0;
+                width: 250px;
+                height: 30%;
+                z-index: 100;
+                background: blue;
+                position: absolute;
+                display: block;
+            }
+        }
+        @media only screen and (max-width: 799px) {
+            .swiper-container {
+                width: 100%;
+                height: 50%;
+                margin: 0 0;
+            }
+            .scontainer-2 {
+                display: none;
+            }
+            .scontainer-3 {
+                display: block;
+            }
+        }
     </style>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -84,99 +130,70 @@
 </head>
 <body>
     <div class="all">
+        <div class="topnav" id="myTopnav">
+            <a href="#home">龜山島</a>
+            <a href="#news">概要</a>
+            <a href="#contact" class="active">
+                賞鯨追豚
+            </a>
+            <a href="#about">
+                島嶼風光
+            </a>
+            <a href="#about">
+                如何登島
+            </a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <img src="image/menu.svg" alt="Alternate Text" />
+            </a>
+        </div>
+        <div style="width:100%;height:66.7px;"></div>
+    </div>
+    <div class="all">
         <div class="container">
             <div class="about">
                 <h1 class="text-center">賞鯨追豚</h1>
-                <div class="text-center">
+                <div class="text-left">
                     this is .
                 </div>
             </div>
         </div>
     </div>
     <div class="all">
-        <div class="container">
             <div class="view">
                 <div id="card-view" class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-                                <img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/image-3.jpg" alt="" />
+                            <a class="example-image-link" href="image/dolphin-01.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                                <img class="example-image" src="image/dolphin-01.jpg" alt="" />
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-4.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-                                <img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/image-4.jpg" alt="" />
+                            <a class="example-image-link" href="image/dolphin-01.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                                <img class="example-image" src="image/dolphin-01.jpg" alt="" />
                             </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-5.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-                                <img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/image-5.jpg" alt="" />
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-                                <img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" alt="" />
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://img.freepik.com/free-vector/modern-technological-elements-with-transparent-background_1035-7108.jpg?size=338c&ext=jpg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://img.freepik.com/free-vector/modern-technological-elements-with-transparent-background_1035-7108.jpg?size=338c&ext=jpg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://img.freepik.com/free-vector/modern-technological-elements-with-transparent-background_1035-7108.jpg?size=338c&ext=jpg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://img.freepik.com/free-vector/modern-technological-elements-with-transparent-background_1035-7108.jpg?size=338c&ext=jpg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://img.freepik.com/free-vector/modern-technological-elements-with-transparent-background_1035-7108.jpg?size=338c&ext=jpg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://img.freepik.com/free-vector/modern-technological-elements-with-transparent-background_1035-7108.jpg?size=338c&ext=jpg">
                         </div>
                     </div>
                     <!-- Add Arrows -->
                     <div class="swiper-button-next" onclick="callShowSlideId()"></div>
 
-
-
                 </div>
                 <div id="showSlideId" style="display: none;">0</div>
                 <div class="scontainer-2">
                     <div class="myswiper-slide">
-                        <div class="swiper-slide-text">text1</div>
+                        <div class="swiper-slide-text">瓶鼻海豚</div>
                     </div>
                     <div class="myswiper-slide">
-                        <div class="swiper-slide-text">text2</div>
-                    </div>
-                    <div class="myswiper-slide">
-                        <div class="swiper-slide-text">text3</div>
-                    </div>
-                    <div class="myswiper-slide">
-                        <div class="swiper-slide-text">text4</div>
-                    </div>
-                    <div class="myswiper-slide">
-                        <div class="swiper-slide-text">text5</div>
-                    </div>
-                    <div class="myswiper-slide">
-                        <div class="swiper-slide-text">text6</div>
-                    </div>
-                    <div class="myswiper-slide">
-                        <div class="swiper-slide-text">text7</div>
-                    </div>
-                    <div class="myswiper-slide">
-                        <div class="swiper-slide-text">text8</div>
-                    </div>
-                    <div class="myswiper-slide">
-                        <div class="swiper-slide-text">text9</div>
-                    </div>
-                    <div class="myswiper-slide">
-                        <div class="swiper-slide-text">text0</div>
+                        <div class="swiper-slide-text">瓶鼻海豚</div>
                     </div>
                 </div>
-            </div>
+                <div class="scontainer-3">
+                    <div class="myswiper-slide-mobile">
+                        <div class="swiper-slide-text">瓶鼻海豚</div>
+                    </div>
+                    <div class="myswiper-slide-mobile">
+                        <div class="swiper-slide-text">瓶鼻海豚</div>
+                    </div>
+                </div>
         </div>
     </div>
 </body>
@@ -195,19 +212,22 @@
                 800: {
                 slidesPerView: 1,
                 slidesPerGroup: 1,
-                spaceBetween: 20
+                spaceBetween: 0
                 }
             }
         });
 
   function showSwiper(n) {
     var i;
-    var x = document.getElementsByClassName("myswiper-slide");
+      var x = document.getElementsByClassName("myswiper-slide");
+      var y = document.getElementsByClassName("myswiper-slide-mobile");
     for (i = 0; i < x.length; i++) {
-      x[i].classList.remove('slide-text-show');
+        x[i].classList.remove('slide-text-show');
+        y[i].classList.remove('slide-text-show');
     }
 
-    x[n].classList.add('slide-text-show');
+      x[n].classList.add('slide-text-show');
+      y[n].classList.add('slide-text-show');
     n++;
     if (n > (x.length - 1)) n=0;
     document.getElementById("showSlideId").innerHTML=n;

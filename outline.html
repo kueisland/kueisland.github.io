@@ -9,32 +9,53 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
     <link rel="stylesheet" href="css/modal-video.min.css">
 
-
+    <link rel="stylesheet" href="css/topnav.css">
     <style>
+        
+
+        .body {
+            margin: 0;
+            padding: 0;
+        }
+
         .all {
-            width: 100%;
+            width: 1140px;
+            margin: 0 calc(50% - 570px);
         }
 
         .about {
             width: 100%;
+            padding:20px;
+            box-sizing:border-box;
+        }
+
+        .about > h1 {
+            margin-bottom:20px;
         }
 
         .text-center {
             text-align: center;
         }
 
+        .text-left {
+            text-align: left;
+        }
+
         .swiper-container {
-            width: 100%;
-            height: 300px;
+            width: 800px;
+            height: 50vh;
+            margin: 0 calc(50% - 400px);
         }
 
-        #card-view {
-            padding: 0px 58px;
-        }
-
-        @media screen and(max-width: 800px) {
-            #card-view {
-                padding: 0px 38px;
+        @media only screen and (max-width: 1139px) {
+            .all {
+                width: 100%;
+                margin: 0 0;
+            }
+            .swiper-container {
+                width: 100%;
+                height: 50%;
+                margin: 0;
             }
         }
     </style>
@@ -49,68 +70,85 @@
 </head>
 <body>
     <div class="all">
-        <div class="container">
-            <div class="about">
-                <h1 class="text-center">概要</h1>
-                <div class="text-center">
-                    this is .
-                </div>
+        <div class="topnav" id="myTopnav">
+            <a href="#home">龜山島</a>
+            <a href="#news" class="active">概要</a>
+            <a href="#contact">
+                賞鯨追豚
+            </a>
+            <a href="#about">
+                島嶼風光
+            </a>
+            <a href="#about">
+                如何登島
+            </a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <img src="image/menu.svg" alt="Alternate Text" />
+            </a>
+        </div>
+        <div style="width:100%;height:66.7px;"></div>
+    </div>
+    <div class="all">
+        <div class="about">
+            <h1 class="text-center">概要</h1>
+            <div class="text-left">
+                <p>龜山島。又稱龜山嶼，最早的名字叫菸斗嶼；國際海圖名稱為五獅嶼，頭城人常稱為龜島或龜嶼。台灣外海、太平洋中的島嶼，位於蘭陽平原東面的太平洋上一座火山島。因外型似浮龜而得名。</p>
+                <p>
+                    龜山島島嶼總面積2.85平方公里，相當於2.85甲土地。
+                    東西長3.3公里，南北長1.7公里，海拔高度398公尺相當於台北101大樓85層樓高，最上面有一個衛哨站，只要攀爬1706階階梯即可到達龜山島最高點。
+                </p>
             </div>
         </div>
     </div>
     <div class="all">
-        <div class="container-fluid">
-            <div id="card-view" class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a href="#" class="js-video-button" data-video-id='SMzX62d5WTw'><img src="image/island-01.jpg" style="width: 80%;" alt="" /></a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#" class="js-video-button2" data-video-id='86TPAfxGZQo'><img src="image/island-02.jpg" style="width: 80%" alt="" /></a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#" class="js-video-button3" data-video-id='SMzX62d5WTw'><img src="image/island-01.jpg" style="width: 80%;" alt="" /></a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#" class="js-video-button4" data-video-id='86TPAfxGZQo'><img src="image/island-02.jpg" style="width: 80%" alt="" /></a>
-                    </div>
+        <div id="video-view" class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#" class="js-video-button" data-video-id='SMzX62d5WTw'><img src="image/island-01.jpg" style="width: 100%;" alt="" /></a>
                 </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-                <!-- Add Arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
             </div>
+            <!-- Add Pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+            <!-- Add Arrows -->
+            <!-- <div class="swiper-button-next"></div> -->
+            <!-- <div class="swiper-button-prev"></div> -->
         </div>
     </div>
 </body>
 <script>
-        var swiper = new Swiper('#card-view', {
-          slidesPerView: 3,
-          slidesPerGroup: 3,
-          loop: true,
-          centeredSlides: true,
-          spaceBetween: 30,
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-          },
-          navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-          breakpoints: {
+    var swiper = new Swiper('#video-view', {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        loop: true,
+        centeredSlides: true,
+        spaceBetween: 20,
+        /*pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+          },*/
+        breakpoints: {
             // when window width is <= 480px
-                800: {
+            800: {
                 slidesPerView: 1,
                 slidesPerGroup: 1,
-                spaceBetween: 20
-                }
+                spaceBetween: 0
             }
-        });
-        $(".js-video-button").modalVideo();
-        $(".js-video-button2").modalVideo();
-        $(".js-video-button3").modalVideo();
-        $(".js-video-button4").modalVideo();
+        }
+    });
+    $(".js-video-button").modalVideo();
+
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
 </script>
 </html>

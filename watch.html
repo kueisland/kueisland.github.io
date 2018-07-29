@@ -45,17 +45,17 @@
 
         .swiper-container {
             width: 800px;
-            height: 50vh;
+            height: 75vh;
             margin: 0 calc(50% - 400px);
         }
 
         .scontainer-2 {
-            top: 30%;
+            top: 10%;
             left: calc(50% - 525px);
             width: 250px;
-            height: 30%;
+            height: 80%;
             z-index: 100;
-            background: blue;
+            background: rgba(2,136,174,0.5);
             position: absolute;
             display: block;
         }
@@ -64,15 +64,28 @@
             width: 100%;
             min-height: 30vh;
             z-index: 100;
-            background: blue;
+            background: rgba(2,136,174,0.5);
             display: none;
+        }
+
+        .swiper-button-next {
+            position:fixed;
+            z-index:5;
+            right: calc(50% - 470px);
+            top:30%;
+            width: 100px;
+            height: 150px;
+            background-image: url('image/swiper-right.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         .swiper-slide-text {
             top: 20%;
             padding-top: calc(100vh / 35);
             width:100%;
-            font-size: 36px;
+            font-size: 18px;
             color: white;
             text-align:center;
             position: absolute;
@@ -175,7 +188,7 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <a class="example-image-link" href="image/dolphin-all-01.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-                                <img class="example-image" src="image/dolphin-01.jpg" alt="" />
+                                <img class="example-image" src="image/dolphin-all-01.jpg" alt="" />
                             </a>
                         </div>
                         <div class="swiper-slide">
@@ -191,7 +204,13 @@
                 <div id="showSlideId" style="display: none;">0</div>
                 <div class="scontainer-2">
                     <div class="myswiper-slide">
-                        <div class="swiper-slide-text">瓶鼻海豚</div>
+                        <div class="swiper-slide-text">
+                            <h3>瓶鼻海豚</h3>
+                            <p style="margin:0 10px;">
+                                台灣俗稱：大白腹仔。絕大部份人對於海豚的印象，幾乎都來自他們，也是擔任海洋育樂世界的表演者，通常嘴吻短粗，但也有例外的，
+                            體形粗壯背部呈黑灰色，腹部下呈現灰白色，體長100~390公分，體重660公斤，個性十分的好動、粗野、活潑。當瓶鼻海豚群體出現時，則會有魚躍、高跳等豐富的海面行為。
+                            </p>
+                        </div>
                     </div>
                     <div class="myswiper-slide">
                         <div class="swiper-slide-text">瓶鼻海豚</div>

@@ -150,6 +150,12 @@
             .scontainer-3 {
                 display: block;
             }
+            .swiper-button-next {
+                position: fixed;
+                z-index: 5;
+                right: 0;
+                top: 40%;
+            }
         }
     </style>
 
@@ -162,15 +168,18 @@
 <body style="background-color: transparent!important;">
     <div class="all">
         <div class="topnav" id="myTopnav">
-            <a href="javascript:window.top.subToHomePage();">龜山島</a>
-            <a href="javascript:window.top.subToSubPage('outline.html');">概要</a>
-            <a href="#contact" class="active">
+            <a href="javascript:window.top.subToHomePage();" style="padding:0;text-align:left;">
+                龜山島賞鯨<br />
+                旅客服務中心
+            </a>
+            <a class="text-margin" href="javascript:window.top.subToSubPage('outline.html');">概要</a>
+            <a href="#contact" class="text-margin active">
                 賞鯨追豚
             </a>
-            <a href="#about">
+            <a class="text-margin" href="#">
                 島嶼風光
             </a>
-            <a href="#about">
+            <a class="text-margin" href="#">
                 如何登島
             </a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">

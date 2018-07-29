@@ -6,7 +6,7 @@
     padding: 0 calc(50% - 570px);
     width: 100%;
     box-sizing: border-box;
-    background-color: rgb(0,130,190);
+    background-color: rgb(255,255,255);
     overflow: hidden;
 }
 
@@ -14,7 +14,7 @@
     .topnav a {
         float: left;
         display: block;
-        color: #f2f2f2;
+        color: black;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
@@ -24,7 +24,11 @@
 /* Add an active class to highlight the current page */
 .active {
     background-color: rgb(200,20,45);
-    color: black;
+    color: white!important;
+}
+
+.text-margin {
+    margin-left: calc(22% - 100px);
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -101,6 +105,10 @@
     .topnav a.icon {
         float: right;
         display: block;
+    }
+
+    .text-margin {
+        margin-left: 0;
     }
 }
 

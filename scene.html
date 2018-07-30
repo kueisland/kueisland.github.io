@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=div., initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>概要</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
@@ -21,55 +21,58 @@
         .all {
             width: 1140px;
             margin: 0 calc(50% - 570px);
-            float:left;
-        }
-
-        .all-fullhd {
-            width: 1920px;
-            margin: 0 calc(50% - 960px);
             float: left;
         }
 
-        .all-fullhd-left {
-            width: 960px;
-            margin: 0 calc(50% - 960px);
-            margin-right: 0px;
-            float: left;
-        }
+        @media only screen and (min-width: 1920x) {
 
-        .all-fullhd-right {
-            width: 960px;
-            margin: 0 calc(50% - 960px);
-            margin-left: 0px;
-            float: left;
-        }
+            .all-fullhd {
+                width: 1920px;
+                margin: 0 calc(50% - 960px);
+                float: left;
+            }
 
-        .all-fullhd-left-2 {
-            width: 568px;
-            margin: 0 calc(50% - 960px);
-            margin-right: 0px;
-            float: left;
-        }
+            .all-fullhd-left {
+                width: 960px;
+                margin: 0 calc(50% - 960px);
+                margin-right: 0px;
+                float: left;
+            }
 
-        .all-fullhd-right-2 {
-            width: 1352px;
-            margin: 0 calc(50% - 960px);
-            margin-left: 0px;
-            float: left;
-        }
+            .all-fullhd-right {
+                width: 960px;
+                margin: 0 calc(50% - 960px);
+                margin-left: 0px;
+                float: left;
+            }
 
-        .all-fullhd-left-3 {
-            width: 1352px;
-            margin: 0 calc(50% - 960px);
-            margin-right: 0px;
-            float: left;
-        }
+            .all-fullhd-left-2 {
+                width: 568px;
+                margin: 0 calc(50% - 960px);
+                margin-right: 0px;
+                float: left;
+            }
 
-        .all-fullhd-right-3 {
-            width: 568px;
-            margin: 0 calc(50% - 960px);
-            margin-left: 0px;
-            float: left;
+            .all-fullhd-right-2 {
+                width: 1352px;
+                margin: 0 calc(50% - 960px);
+                margin-left: 0px;
+                float: left;
+            }
+
+            .all-fullhd-left-3 {
+                width: 1352px;
+                margin: 0 calc(50% - 960px);
+                margin-right: 0px;
+                float: left;
+            }
+
+            .all-fullhd-right-3 {
+                width: 568px;
+                margin: 0 calc(50% - 960px);
+                margin-left: 0px;
+                float: left;
+            }
         }
 
         .about {
@@ -100,7 +103,7 @@
         @media only screen and (max-width: 1919x) {
             .all-fullhd {
                 width: 100%;
-                margin: 0;
+                margin: 0 0;
             }
 
             .all-fullhd-left {
@@ -557,6 +560,8 @@
     </div>
 </body>
 <script>
+    console.log(window.innerWidth);
+
     var swiper = new Swiper('#video-view', {
         slidesPerView: 1,
         slidesPerGroup: 1,

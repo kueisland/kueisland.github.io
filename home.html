@@ -80,6 +80,7 @@
                 margin:12vh 0;
             }
                 .scroll-content-div1 {
+                    display:block;
                     width: 350px;
                     margin: 0 75px!important;
                 }
@@ -89,27 +90,27 @@
             margin: 0 166px !important;
         }
 
-            #scroll-content a {
-                display: block;
-                color: #fff;
-                text-decoration: none;
-                width: 130px;
-                margin: 5vh calc(50% - 65px);
-                padding: 0;
-                height: 59px;
-                padding: 15px 0;
-                font-size: 24px;
-                background: rgba(0,130,190,0.5);
-                transition: .6s background;
-                border-bottom: none;
-                margin: 10px auto;
-                text-align: center;
-            }
+        #scroll-content a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            width: 130px;
+            margin: 5vh calc(50% - 65px);
+            padding: 0;
+            height: 59px;
+            padding: 15px 0;
+            font-size: 24px;
+            background: rgba(10,80,115,0.5);
+            transition: .6s background;
+            border-bottom: none;
+            margin: 10px auto;
+            text-align: center;
+        }
 
-                #scroll-content a:hover {
-                    background: rgba(10,80,115,0.5);
-                    color: white;
-                }
+            #scroll-content a:hover {
+                background: rgba(0,130,190,0.5);
+                color: white;
+            }
 
         .scroll-content-hide {
             animation: scroll-hide 1s ease 0s forwards;
@@ -138,6 +139,7 @@
                 }
 
             .scroll-content-div1 {
+                display: block;
                 width: 350px;
                 margin: 0 75px !important;
             }
@@ -157,7 +159,7 @@
                 height: 59px;
                 padding: 15px 0;
                 font-size: 24px;
-                background: rgba(0,130,190,0.5);
+                background: rgba(10,80,115,0.5);
                 transition: .6s background;
                 border-bottom: none;
                 margin: 10px auto;
@@ -188,6 +190,7 @@
                 }
 
             .scroll-content-div1 {
+                display: none;
                 width: 88vw;
                 margin: 0 calc(6vw - 10px) !important;
             }
@@ -197,22 +200,22 @@
                 margin: 0 calc(31vw - 10px)!important;
             }
 
-                #scroll-content a {
-                    display: block;
-                    color: #fff;
-                    text-decoration: none;
-                    width: 20vw;
-                    margin: 5vh calc(50% - 65px);
-                    padding: 5vw 0;
-                    height: 15vw;
-                    padding: 4vw 0;
-                    font-size: 5vw;
-                    background: rgba(0,130,190,0.5);
-                    transition: .6s background;
-                    border-bottom: none;
-                    margin: 2vw auto;
-                    text-align: center;
-                }
+            #scroll-content a {
+                display: block;
+                color: #fff;
+                text-decoration: none;
+                width: 20vw;
+                margin: 5vh calc(50% - 65px);
+                padding: 5vw 0;
+                height: 15vw;
+                padding: 4vw 0;
+                font-size: 5vw;
+                background: rgba(10,80,115,0.5);
+                transition: .6s background;
+                border-bottom: none;
+                margin: 2vw auto;
+                text-align: center;
+            }
         }
 
         @media only screen and (max-width: 240px) {
@@ -238,6 +241,7 @@
                 }
 
             .scroll-content-div1 {
+                display: none;
                 width: 58vw;
                 margin: 0 calc(21vw - 10px) !important;
             }
@@ -257,7 +261,7 @@
                 height: 15vw;
                 padding: 4vw 0;
                 font-size: 5vw;
-                background: rgba(0,130,190,0.5);
+                background: rgba(10,80,115,0.5);
                 transition: .6s background;
                 border-bottom: none;
                 margin: 2vw auto;
@@ -379,11 +383,11 @@
     <div id="scroll-content">
         <h1>龜山島</h1>
         <div class="scroll-content-div1">
-            最早的名字叫菸斗嶼；國際海圖名稱為五獅嶼。<br />
+            最早的名字叫菸斗嶼；國際海圖名稱為五獅嶼。
             位於蘭陽平原東面的太平洋上一座火山島。<br />
             因外型似浮龜而得名。
         </div>
-        <div><a onclick="showMenu()">Enter</a></div>
+        <div><a onclick="window.top.homeToSubPage('outline.html')">Enter</a></div>
         <div class="scroll-content-div3" style="margin-bottom:118px;">龜山島旅客服務中心</div>
     </div>
     <div id="vidtop-content" style="display:none;">

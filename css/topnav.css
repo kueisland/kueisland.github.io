@@ -1,6 +1,6 @@
 ﻿#vidtop-content {
     position: fixed;
-    z-index: 200;
+    z-index: 600;
     top: calc(50% - 155px);
     left: calc(50% - 125px);
     width: 250px;
@@ -223,4 +223,10 @@
             width: 100%;
             text-align: left;
         }
+}
+
+@media screen and (max-width: 240px) {
+    .topnav .icon {
+        margin-right: 0px;
+    }
 }

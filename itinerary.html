@@ -60,9 +60,10 @@
         }
 
         .item{
+            margin-top:100px;
             position:relative;
             width:100%;
-            height:800px;
+            min-height:800px;
         }
         .item-up-1 {
             position: absolute;
@@ -88,7 +89,8 @@
             top: 530px;
             z-index: 3;
             width: 100%;
-            color:black;
+            color: black;
+            padding: 0 0;
         }
         .item-down {
             position: absolute;
@@ -96,16 +98,141 @@
             z-index: 1;
             background-color: gray;
             width: 100%;
-            height: 400px;
+            min-height: 400px;
+        }
+        .img {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
         .img-01 {
-            position:relative;
-            width:100%;
-            height:500px;
             background-image: url('image/itinerary-01.jpg');
-            background-position:center;
-            background-size:cover;
-            background-repeat:no-repeat;
+        }
+        @media only screen and (max-width: 1139px) {
+            .item {
+                margin-top: 100px;
+                position: relative;
+                width: 100%;
+                min-height: 80vh;
+            }
+
+            .item-up-1 {
+                position: absolute;
+                top: 0px;
+                z-index: 2;
+                width: 100%;
+                height: 50vh;
+            }
+
+            .item-up-2 {
+                position: absolute;
+                top: calc(40vh);
+                left: 100px;
+                z-index: 3;
+                height: 68px;
+                padding: 0 10px;
+                background-color: rgba(0,0,255,0.5);
+                color: white;
+                font-size: 24px;
+                line-height: 68px;
+            }
+
+            .item-up-3 {
+                position: absolute;
+                top: calc(50vh + 30px);
+                z-index: 3;
+                width: 100%;
+                color: black;
+                padding:0 10px;
+            }
+
+            .item-down {
+                position: absolute;
+                top: calc(40vh + 10px);
+                z-index: 1;
+                background-color: gray;
+                width: 100%;
+                min-height: 50vh;
+            }
+
+            .img {
+                position: relative;
+                width: 100%;
+                height: 50vh;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+        @media only screen and (max-width: 799px) {
+            .item {
+                margin-top: 50vh;
+                position: relative;
+                width: 100%;
+                min-height: 50vh;
+            }
+
+            .item-up-1 {
+                position: absolute;
+                top: 0px;
+                z-index: 2;
+                width: 100%;
+                height: 30vh;
+            }
+
+            .item-up-2 {
+                position: absolute;
+                top: calc(25vh);
+                left: 5vw;
+                z-index: 3;
+                height: 12vw;
+                padding: 0 10px;
+                background-color: rgba(0,0,255,0.5);
+                color: white;
+                font-size: 4vw;
+                line-height: 12vw;
+            }
+
+            .item-up-3 {
+                position: absolute;
+                top: calc(30vh + 30px);
+                z-index: 3;
+                width: 100%;
+                background-color: gray;
+                box-sizing:border-box;
+                color: black;
+                padding: 0 10px;
+            }
+
+            .item-down {
+                position: absolute;
+                top: calc(30vh - 10px);
+                z-index: 1;
+                background-color: gray;
+                width: 100%;
+                min-height: 25vh;
+            }
+
+            .img {
+                position: relative;
+                width: 100%;
+                height: 30vh;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+
+        @media only screen and (max-width: 240px) {
+            .item {
+                margin-top: 100vh;
+                position: relative;
+                width: 100%;
+                min-height: 50vh;
+            }
         }
     </style>
 
@@ -149,10 +276,10 @@
         </div>
         <div style="width:100%;height:66.7px;"></div>
     </div>
-    <div class="item">
+    <div class="item" style="margin-top: 100px;">
         <div class="item-up-1">
             <div class="all">
-                <div class="img-01">
+                <div class="img img-01">
                     <div class="item-up-2">二合一行程： 賞鯨 + 繞龜山島八景</div>
                 </div>
             </div>
@@ -165,6 +292,63 @@
                 <p>費用： 個人 $ 1 2 0 0 、團體 $ 1 0 0 0</p>
                 <p>另有網路預購鯨喜價：請來電洽詢</p>
                 <p>內容： A . 賞鯨 + 環繞龜山島 + 船票 B . 報關 + 專業解說 C . 2 0 0 萬意外險 D . 2 0 0萬團體傷害險</p>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="item-up-1">
+            <div class="all">
+                <div class="img img-01">
+                    <div class="item-up-2">二合一行程： 賞鯨 + 繞龜山島八景</div>
+                </div>
+            </div>
+        </div>
+        <div class="item-down"></div>
+        <div class="item-up-3">
+            <div class="all">
+                <p>船班： 0 9 : 0 0 、1 3 : 0 0</p>
+                <p>時間： 約2 . 5 - 3 小時</p>
+                <p>費用： 個人 $1200、團體 $1000(不含清潔費)</p>
+                <p>另有網路預購鯨喜價：請來電洽詢</p>
+                <p>內容： A. 登島 + 環繞龜山島 + 船票   B. 報關 + 專業解說 C. 200萬意外險 D. 200萬團體傷害</p>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="item-up-1">
+            <div class="all">
+                <div class="img img-01">
+                    <div class="item-up-2">三合一行程：賞鯨 + 龜山八景 + 登龜山島</div>
+                </div>
+            </div>
+        </div>
+        <div class="item-down"></div>
+        <div class="item-up-3">
+            <div class="all">
+                <p>船班： 0 9 : 0 0 、1 3 : 0 0</p>
+                <p>時間： 約4 小時</p>
+                <p>費用： 個人 $1600、團體 $1500</p>
+                <p>另有網路預購鯨喜價：請來電洽詢</p>
+                <p>內容： A. 賞鯨+登島+環繞龜山島    B. 船票+報關+專業解說 C. 200萬意外險 D. 200萬團體傷害險</p>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="item-up-1">
+            <div class="all">
+                <div class="img img-01">
+                    <div class="item-up-2">401行程： 401高地 + 登龜山島 + 繞島</div>
+                </div>
+            </div>
+        </div>
+        <div class="item-down"></div>
+        <div class="item-up-3">
+            <div class="all">
+                <p>船班： 0 8 : 0 0 (5/1日正式開放,現在接受預約)	</p>
+                <p>時間： 約8 小時</p>
+                <p>費用： 每人 $1500(不含清潔費)</p>
+                <p>另有網路預購鯨喜價：請來電洽詢</p>
+                <p>內容： A.401高地+登龜山島+ 環繞龜山島 + 船票 B. 專業解說 C. 200萬意外險 D. 200萬團體傷害險</p>
             </div>
         </div>
     </div>
@@ -197,23 +381,26 @@
 
     /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
     function myFunction() {
-        /*var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
+        if (window.innerWidth > 240) {
+            var x = document.getElementById("vidtop-content");
+            if (x.style.display == 'none') {
+                x.style.display = 'block';
+                x.classList.add('vidtop-content-show');
+            } else {
+                x.classList.remove('vidtop-content-show');
+                x.classList.add('vidtop-content-hide');
+                setTimeout(function () {
+                    x.classList.remove('vidtop-content-hide');
+                    x.style.display = 'none';
+                }, 1000);
+            }
         } else {
-            x.className = "topnav";
-        }*/
-        var x = document.getElementById("vidtop-content");
-        if (x.style.display == 'none') {
-            x.style.display = 'block';
-            x.classList.add('vidtop-content-show');
-        } else {
-            x.classList.remove('vidtop-content-show');
-            x.classList.add('vidtop-content-hide');
-            setTimeout(function () {
-                x.classList.remove('vidtop-content-hide');
-                x.style.display = 'none';
-            }, 1000);
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
         }
     }
 

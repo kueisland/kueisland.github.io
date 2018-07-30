@@ -11,7 +11,6 @@
 
     <link rel="stylesheet" href="css/topnav.css">
     <style>
-
         .body {
             margin: 0;
             padding: 0;
@@ -71,6 +70,14 @@
 </head>
 <body style="background-color: transparent!important;">
     <div class="all">
+        <div id="vidtop-content" style="display:none;">
+            <div class="vid-info">
+                <a class="active">概要</a>
+                <a onclick="window.top.subToSubPage('watch.html')">賞鯨追豚</a>
+                <a onclick="window.top.subToSubPage('scene.html')">島嶼風光</a>
+                <a>如何登島</a>
+            </div>
+        </div>
         <div class="topnav" id="myTopnav">
             <a href="javascript:window.top.subToHomePage();" style="float:left;padding:0;text-align:left;">
                 龜山島賞鯨<br />
@@ -160,11 +167,23 @@
 
     /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
     function myFunction() {
-        var x = document.getElementById("myTopnav");
+        /*var x = document.getElementById("myTopnav");
         if (x.className === "topnav") {
             x.className += " responsive";
         } else {
             x.className = "topnav";
+        }*/
+        var x = document.getElementById("vidtop-content");
+        if (x.style.display == 'none') {
+            x.style.display = 'block';
+            x.classList.add('vidtop-content-show');
+        } else {
+            x.classList.remove('vidtop-content-show');
+            x.classList.add('vidtop-content-hide');
+            setTimeout(function () {
+                x.classList.remove('vidtop-content-hide');
+                x.style.display = 'none';
+            }, 1000);
         }
     }
 

@@ -599,12 +599,10 @@
 
         carousel(0);
 
-        $("div").on("load", function () {
-            window.top.LoadHide();
-            setTimeout(function () {
-                window.top.removeLoad();
-            }, 3000);
-        });
+        window.top.LoadHide();
+        setTimeout(function () {
+            window.top.removeLoad();
+        }, 3000);
 
     }
 

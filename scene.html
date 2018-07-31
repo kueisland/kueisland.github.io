@@ -619,7 +619,7 @@
         </div>
         <div class="all-fullhd-left-mid">
             <div class="about">
-                <img class="img-05" src="image/scene-05.jpg" style="margin-top:20px;" data-aos="fade-left" data-aos-duration="3000" alt="" />
+                <img class="img-05" src="image/scene-05.jpg" style="margin-top:20px;" data-aos="fade-up" data-aos-duration="3000" alt="" />
                 <div style="padding:20px;" data-aos="zoom-in" data-aos-duration="3000">
                     <h2>海底溫泉</h2>
                     <p>
@@ -632,7 +632,7 @@
         </div>
         <div class="all-fullhd-right-mid">
             <div class="about">
-                <img class="img-06" src="image/scene-06.jpg" data-aos="fade-right" data-aos-duration="3000" alt="" />
+                <img class="img-06" src="image/scene-06.jpg" data-aos="fade-up" data-aos-duration="3000" alt="" />
                 <div style="padding:20px;" data-aos="zoom-in" data-aos-duration="3000">
                     <h2>龜島磺煙</h2>
                     <p style="margin-bottom:20px;">
@@ -644,7 +644,7 @@
         </div>
         <div class="all-fullhd-left-2-mid">
             <div class="about">
-                <img class="img-07" src="image/scene-07.jpg" style="margin-top:20px;" data-aos="fade-left" data-aos-duration="3000" alt="" />
+                <img class="img-07" src="image/scene-07.jpg" style="margin-top:20px;" data-aos="fade-up" data-aos-duration="3000" alt="" />
                 <div style="padding:20px;" data-aos="zoom-in" data-aos-duration="3000">
                     <h2>龜岩巉壁</h2>
                     <p>
@@ -657,7 +657,7 @@
         </div>
         <div class="all-fullhd-right-2-mid">
             <div class="about">
-                <img class="img-08" src="image/scene-08.jpg" data-aos="fade-right" data-aos-duration="3000" alt="" />
+                <img class="img-08" src="image/scene-08.jpg" data-aos="fade-up" data-aos-duration="3000" alt="" />
                 <div style="padding:20px;" data-aos="zoom-in" data-aos-duration="3000">
                     <h2>眼鏡洞;</h2>
                     <p>
@@ -668,7 +668,7 @@
         </div>
         <div class="all-fullhd-right-2-mid">
             <div class="about">
-                <img class="img-09" src="image/scene-09.jpg" data-aos="fade-right" data-aos-duration="3000" alt="" />
+                <img class="img-09" src="image/scene-09.jpg" data-aos="fade-up" data-aos-duration="3000" alt="" />
                 <div style="width:40%;padding:20px;float:left;margin:5vw 0;" data-aos="zoom-in" data-aos-duration="3000">
                     <h2>龜山島的M1 90mm海岸砲</h2>
                 </div>
@@ -695,7 +695,7 @@
         </div>
         <div class="all-fullhd-left-3-mid">
             <div class="about">
-                <img class="img-11" src="image/scene-11.jpg" style="margin-top:20px;" data-aos="fade-left" data-aos-duration="3000" alt="" />
+                <img class="img-11" src="image/scene-11.jpg" style="margin-top:20px;" data-aos="fade-up" data-aos-duration="3000" alt="" />
                 <div style="padding:20px;" data-aos="zoom-in" data-aos-duration="3000">
                     <h2>拱蘭宮</h2>
                     <p>
@@ -708,7 +708,7 @@
         </div>
         <div class="all-fullhd-right-3-mid">
             <div class="about">
-                <img class="img-12" src="image/scene-12.jpg" data-aos="fade-right" data-aos-duration="3000" alt="" />
+                <img class="img-12" src="image/scene-12.jpg" data-aos="fade-up" data-aos-duration="3000" alt="" />
                 <div style="padding:20px;" data-aos="zoom-in" data-aos-duration="3000">
                     <p>
                         島上的駐軍於民國60年代末，在島上
@@ -878,6 +878,8 @@
         } else {
             document.getElementById("content-mobile").style.display = 'block';
         }
+
+        AOS.init();
     }
 
     var swiper = new Swiper('#video-view', {
@@ -929,8 +931,6 @@
             }
         }
     }
-
-    AOS.init();
 
     myResize();
 

@@ -558,32 +558,18 @@
     } else {
         document.getElementById("video-background").style.display = "none";
 
-        $('#slide-background').load(function () {
-            var myIndex = 0;
-            var isfirstshow = 0;
+        var myIndex = 0;
+        var isfirstshow = 0;
 
-            function carousel(id) {
-                var i;
-                var x = document.getElementsByClassName("mySlides");
-                if (isfirstshow == 1) {
-                    x[id].classList.add("mySlides-hide");
+        function carousel(id) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (isfirstshow == 1) {
+                x[id].classList.add("mySlides-hide");
 
-                    setTimeout(function () {
-                        x[id].style.display = "none";
-                        x[id].classList.remove("mySlides-hide");
-                        myIndex = id + 1;
-                        if (myIndex > (x.length - 1)) { myIndex = 0 }
-                        x[myIndex].style.display = "block";
-                        x[myIndex].classList.add("mySlides-show");
-                        setTimeout(function () {
-                            x[myIndex].classList.remove("mySlides-show");
-                            setTimeout(function () {
-                                carousel(myIndex);
-                            }, 5000);
-                        }, 2000);
-                    }, 2000);
-                } else {
-                    isfirstshow = 1;
+                setTimeout(function () {
+                    x[id].style.display = "none";
+                    x[id].classList.remove("mySlides-hide");
                     myIndex = id + 1;
                     if (myIndex > (x.length - 1)) { myIndex = 0 }
                     x[myIndex].style.display = "block";
@@ -594,12 +580,26 @@
                             carousel(myIndex);
                         }, 5000);
                     }, 2000);
-                }
-
+                }, 2000);
+            } else {
+                isfirstshow = 1;
+                myIndex = id + 1;
+                if (myIndex > (x.length - 1)) { myIndex = 0 }
+                x[myIndex].style.display = "block";
+                x[myIndex].classList.add("mySlides-show");
+                setTimeout(function () {
+                    x[myIndex].classList.remove("mySlides-show");
+                    setTimeout(function () {
+                        carousel(myIndex);
+                    }, 5000);
+                }, 2000);
             }
+            
+        }
 
-            carousel(0);
+        carousel(0);
 
+        $('#slide-background').load(function () {
             window.top.LoadHide();
             setTimeout(function () {
                 window.top.removeLoad();

@@ -107,7 +107,6 @@
             background: rgba(10,80,115,0.5);
             transition: .6s background;
             border-bottom: none;
-            margin: 10px auto;
             text-align: center;
         }
 
@@ -166,9 +165,44 @@
                 background: rgba(10,80,115,0.5);
                 transition: .6s background;
                 border-bottom: none;
-                margin: 10px auto;
                 text-align: center;
             }
+        }
+
+        @media only screen and (max-width: 1280px) {
+            #scroll-content {
+                position: fixed;
+                top: calc(55% - 235px);
+                left: calc(50% - 500px);
+                width: 1000px;
+                color: #fff;
+            }
+        }
+
+        @media only screen and (max-width: 1024px) {
+            #scroll-content {
+                position: fixed;
+                top: calc(40% - 108px);
+                left: calc(50% - 500px);
+                width: 1000px;
+                color: #fff;
+            }
+
+                #scroll-content a {
+                    display: block;
+                    color: #fff;
+                    text-decoration: none;
+                    width: 100px;
+                    padding: 0;
+                    height: 49px;
+                    padding: 10px 0;
+                    font-size: 24px;
+                    background: rgba(10,80,115,0.5);
+                    transition: .6s background;
+                    border-bottom: none;
+                    margin: 10px auto;
+                    text-align: center;
+                }
         }
 
         @media only screen and (max-width: 799px) {

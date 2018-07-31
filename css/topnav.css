@@ -109,7 +109,7 @@
 }
 
 .text-margin {
-    margin-left: calc(22% - 100px);
+    margin-left: calc(25% - 122px);
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -228,8 +228,15 @@
         }
 }
 
+@media screen and (max-width: 348px) {
+    .topnav .icon {
+        margin-right: calc(100% - 176px);
+    }
+}
+
 @media screen and (max-width: 240px) {
     .topnav .icon {
+        float: right!important;
         margin-right: 0px;
     }
 }

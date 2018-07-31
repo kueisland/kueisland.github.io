@@ -76,6 +76,7 @@
         .vid-info a:hover {
             background: rgba(10,80,115,1);
             color: white;
+            cursor: pointer;
         }
 
 /* Add a black background color to the top navigation */

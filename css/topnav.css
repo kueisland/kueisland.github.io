@@ -163,12 +163,14 @@
 .topnav a:hover, .dropdown:hover .dropbtn {
     background-color: rgb(10,80,115);
     color: white;
+    cursor: pointer;
 }
 
 /* Add a grey background to dropdown links on hover */
 .dropdown-content a:hover {
     background-color: #ddd;
     color: black;
+    cursor: pointer;
 }
 
 /* Show the dropdown menu when the user moves the mouse over the dropdown button */

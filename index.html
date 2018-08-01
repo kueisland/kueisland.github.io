@@ -324,7 +324,13 @@
             resetLoad();
             addLoad();
             document.getElementById("subpage").src = "";
+            
             setTimeout(function () {
+                if (url == "outline.html") {
+                    document.getElementById("subpage").classList.add('bg2');
+                } else {
+                    document.getElementById("subpage").classList.remove('bg2');
+                }
                 document.getElementById("subpage").src = url;
             }, 100);
         }, 1500);

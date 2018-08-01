@@ -42,6 +42,10 @@
     }
 }
 
+.logo{
+    margin-left:100px;
+}
+
 .vid-info {
     width: 100%;
     height: 100%;
@@ -108,14 +112,19 @@
     color: white!important;
 }
 
-.text-margin {
-    margin-left: calc(25% - 122px);
+.text-margin-first {
+    margin-left: calc(100% - 684px);
 }
+
+.text-margin {
+    margin-left: calc(20px);
+}
+
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
     display: none;
-    margin-right: calc(50% - 12px);
+    margin-right: calc(0px);
 }
 
     .topnav .icon > img {
@@ -179,8 +188,26 @@
     display: block;
 }
 
+@media screen and (max-width: 799px) {
+    .logo {
+        margin-left: 0vw;
+    }
+
+    .text-margin-first {
+        margin-left: calc(100% - 584px - 0vw);
+    }
+}
+
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
+    .logo {
+        margin-left: 0vw;
+    }
+
+    .text-margin-first {
+        margin-left: calc(0px);
+    }
+
     .topnav a:not(:first-child), .dropdown .dropbtn {
         display: none;
     }
@@ -230,7 +257,7 @@
 
 @media screen and (max-width: 348px) {
     .topnav .icon {
-        margin-right: calc(100% - 176px);
+        margin-right: calc(0px);
     }
 }
 

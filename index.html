@@ -18,11 +18,25 @@
             height: 100%;
         }
 
-        .subpage {
+        .bg-2nd {
             position: fixed;
             top: 0;
             left: 0;
             z-index: 2;
+            width: 100%;
+            height: 100%;
+            background-image: url('image/outline-bg');
+            background-position:center;
+            background-size:cover;
+            background-repeat:no-repeat;
+            display: none;
+        }
+
+        .subpage {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 3;
             width: 100%;
             height: 100%;
             display: none;
@@ -175,6 +189,7 @@
     <div class="homepage">
         <iframe id="homepage" src=""></iframe>
     </div>
+    <div id="2nd-bg" class="bg-2nd"></div>
     <div id="divsubpage" class="subpage">
         <iframe id="subpage" src="" allowtransparency="true"></iframe>
     </div>
@@ -276,6 +291,7 @@
             addLoad();
             document.getElementById("subpage").src = url;
             document.getElementById("divsubpage").style.display = "block";
+            document.getElementById("2nd-bg").style.display = "block";
         }, 3000);
     }
 
@@ -288,6 +304,7 @@
             addLoad();
             document.getElementById("subpage").src = "";
             document.getElementById("divsubpage").style.display = "none";
+            document.getElementById("2nd-bg").style.display = "none";
             setTimeout(function () {
                 LoadHide();
             }, 100);

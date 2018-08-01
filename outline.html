@@ -60,6 +60,18 @@
                 margin: 0;
             }
         }
+
+        .box-mobile {
+            background-color: rgba(128,128,128,0.5);
+            padding: 20px;
+        }
+
+        @media only screen and (max-width: 799px) {
+            .box-mobile {
+                background-color: rgba(128,128,128,0);
+                padding: 0px;
+            }
+        }
     </style>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -109,14 +121,14 @@
     <div class="all">
         <div class="about">
             <h1 class="text-center" style="margin-top:4rem;">認識龜山島</h1>
-            <div class="text-center" style="margin-bottom:10vh;background-color:rgba(128,128,128,0.5);padding:20px;">
+            <div class="text-center box-mobile" style="margin-bottom:10vh;">
                 <p>
                     龜山島為火山島地質。目前仍有溫泉及硫氣孔等火山相關活動，屬於活火山。其岩層主要是由安山岩質的熔岩流和火山碎屑岩所分別構成。熱螢光定年結果與地層分析顯示龜山島在過去7000年間至少有4次以上之噴發記錄。
                     島上最高點為龜甲山峰海拔398公尺，加上3米的兩層觀景臺共高401公尺，稱為「401高地」，為台灣離島的第二高山，僅次於蘭嶼紅頭山。緊鄰峭壁的龜頭山峰高達239公尺，而龜尾山峰則為141公尺。
                     島上有溫泉、冷泉、海蝕洞、硫氣孔等景觀。特殊動植物生態及海洋資源相當豐富。
                 </p>
             </div>
-            <div class="text-center" style="margin-bottom:10vh;background-color:rgba(128,128,128,0.5);padding:20px;">
+            <div class="text-center box-mobile" style="margin-bottom:10vh;">
                 <p>
                     1977年以前，龜山島向來都有人居住，後來民國政府為軍事需要，將居民強制遷居至台灣本島，並在大溪里建立仁澤新村以安置遷徙過來的島民。1977年之後，直到現今都沒人定居島上，現在該島由海巡署頭城大隊管理。
                 </p>

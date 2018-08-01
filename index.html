@@ -291,6 +291,7 @@
             addLoad();
             document.getElementById("subpage").src = url;
             document.getElementById("divsubpage").style.display = "block";
+            if (url == "outline.html") document.getElementById("subpage").style.backgroundColor = "rgba(255, 255, 255, 0)";
             document.getElementById("2nd-bg").style.display = "block";
         }, 3000);
     }
@@ -304,6 +305,7 @@
             addLoad();
             document.getElementById("subpage").src = "";
             document.getElementById("divsubpage").style.display = "none";
+            document.getElementById("subpage").style.backgroundColor = "rgba(255, 255, 255, 1)";
             document.getElementById("2nd-bg").style.display = "none";
             setTimeout(function () {
                 LoadHide();

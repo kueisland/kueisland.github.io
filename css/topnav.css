@@ -201,7 +201,7 @@
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
     .logo {
-        margin-left: 0vw;
+        margin-left: calc(50% - 79px);
     }
 
     .text-margin-first {
@@ -215,6 +215,10 @@
     .topnav a.icon {
         float: right;
         display: block;
+    }
+
+    .topnav a.icon:hover {
+        background-color:white;
     }
 
     .text-margin {
@@ -258,6 +262,12 @@
 @media screen and (max-width: 348px) {
     .topnav .icon {
         margin-right: calc(0px);
+    }
+}
+
+@media screen and (max-width: 261px) {
+    .logo {
+        margin-left: calc(0px);
     }
 }
 

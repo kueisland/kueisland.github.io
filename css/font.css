@@ -32,4 +32,5 @@ h3 {
 
 .css_td {
     display: table-cell;
+    text-justify: trim !important;
 }

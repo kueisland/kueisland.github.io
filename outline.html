@@ -64,8 +64,8 @@
         .box-mobile {
             background-color: rgba(22, 60, 141, 0.5);
             padding: 20px;
-            width: 75%;
-            margin-right: 25%;
+            width: calc(100% * 1.618 / 2.618);
+            margin-right: calc(100% - (100% * 1.618 / 2.618));
             margin-left: 0%;
             margin-bottom: 50vh;
         }
@@ -73,9 +73,9 @@
         .box-mobile-2 {
             background-color: rgba(22, 60, 141, 0.5);
             padding: 20px;
-            width: 75%;
+            width: calc(100% * 1.618 / 2.618);
             margin-right: 0%;
-            margin-left: 25%;
+            margin-left: calc(100% - (100% * 1.618 / 2.618));
             margin-bottom: 50vh;
         }
 

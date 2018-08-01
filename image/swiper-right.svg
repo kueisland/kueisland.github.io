@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="841.889px" height="1190.549px" viewBox="0 0 841.889 1190.549" enable-background="new 0 0 841.889 1190.549"
 	 xml:space="preserve">
 <rect x="0" y="-323.893" fill="#0288AE" width="841.889" height="1839.683"/>
 <g>
-	
-		<text transform="matrix(0.2872 0 0 1 246.1936 917.7805)" fill="#FFFFFF" font-family="'MicrosoftJhengHeiRegular'" font-size="1116.7028" letter-spacing="66.156">＞</text>
+	<path fill="#FFFFFF" d="M239.916,447.306l149.929,149.971L239.916,747.248c-32.663,32.662-32.663,85.608,0,118.271
+		c16.31,16.352,37.722,24.507,59.135,24.507c21.413,0,42.826-8.155,59.136-24.507L626.47,597.277L358.228,329.035
+		c-32.621-32.663-85.65-32.663-118.271,0C207.295,361.698,207.295,414.643,239.916,447.306z"/>
 </g>
 </svg>

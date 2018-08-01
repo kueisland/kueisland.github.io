@@ -72,19 +72,6 @@
             }
         }
 
-        @media only screen and (max-width: 799px) {
-            .bg-2nd {
-                position: fixed;
-                top: 0;
-                left: 0;
-                z-index: 2;
-                width: 100%;
-                height: 100%;
-                background-color:white!important;
-                display: none;
-            }
-        }
-
         .homepage iframe {
             width: 100%;
             height: 100%;
@@ -308,7 +295,7 @@
             addLoad();
             document.getElementById("subpage").src = url;
             document.getElementById("divsubpage").style.display = "block";
-            if (url == "outline.html") document.getElementById("subpage").classList.add('bg2');
+            if (url == "outline.html" & window.innerWidth > 799) document.getElementById("subpage").classList.add('bg2');
             document.getElementById("2nd-bg").style.display = "block";
         }, 3000);
     }
@@ -339,7 +326,7 @@
             document.getElementById("subpage").src = "";
             
             setTimeout(function () {
-                if (url == "outline.html") {
+                if (url == "outline.html" & window.innerWidth > 799) {
                     document.getElementById("subpage").classList.add('bg2');
                 } else {
                     document.getElementById("subpage").classList.remove('bg2');

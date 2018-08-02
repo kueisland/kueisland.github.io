@@ -101,7 +101,7 @@
             width: 100px;
             margin: 5vh calc(50% - 50px);
             padding: 0;
-            height: 49px;
+            height: 54px;
             padding: 10px 0;
             font-size: 24px;
             background: rgba(10,80,115,0.5);
@@ -160,7 +160,7 @@
                 width: 100px;
                 margin: 5vh calc(50% - 50px);
                 padding: 0;
-                height: 49px;
+                height: 54px;
                 padding: 10px 0;
                 font-size: 24px;
                 background: rgba(10,80,115,0.5);
@@ -195,7 +195,7 @@
                     text-decoration: none;
                     width: 100px;
                     padding: 0;
-                    height: 49px;
+                    height: 54px;
                     padding: 10px 0;
                     font-size: 24px;
                     background: rgba(10,80,115,0.5);
@@ -204,6 +204,14 @@
                     margin: 10px auto;
                     text-align: center;
                 }
+        }
+
+        @media only screen and (max-width: 899px) {
+            .scroll-content-div1 {
+                display: block;
+                width: 450px;
+                margin: 0 275px !important;
+            }
         }
 
         @media only screen and (max-width: 799px) {
@@ -216,9 +224,9 @@
             }
 
                 #scroll-content > h1 {
-                    margin: 0 calc(50% - 6vw);
+                    margin: 0 calc(50% - 2.5vw);
                     margin-bottom: 5vh;
-                    font-size: 12vw;
+                    font-size: 5vw;
                     text-align: center;
                 }
 
@@ -235,8 +243,9 @@
             }
 
             .scroll-content-div3 {
-                width: 38vw;
-                margin: 0 calc(31vw - 10px) !important;
+                width: 46vw;
+                font-size: 2vw!important;
+                margin: 0 calc(50% - 23vw) !important;
             }
 
             #scroll-content a {
@@ -245,10 +254,10 @@
                 text-decoration: none;
                 width: 20vw;
                 margin: 8vh calc(50% - 10vw)!important;
-                padding: 5vw 0;
-                height: 15vw;
-                padding: 4vw 0;
-                font-size: 5vw;
+                padding: 0vw 0;
+                height: 9vw;
+                font-size: 4vw!important;
+                line-height:9vw;
                 background: rgba(10,80,115,0.5);
                 transition: .6s background;
                 border-bottom: none;
@@ -287,7 +296,7 @@
 
             .scroll-content-div3 {
                 width: 46vw;
-                margin: 0 calc(27vw - 10px) !important;
+                margin: 0 calc(50% - 23vw) !important;
             }
 
             #scroll-content a {

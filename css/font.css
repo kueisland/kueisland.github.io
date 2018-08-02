@@ -52,3 +52,21 @@ footer {
     line-height: 36px;
     letter-spacing: 3px;
 }
+
+@media only screen and (max-width: 1139px) {
+    footer {
+        position: fixed;
+        z-index: 200;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        background: rgba(10,80,115,0.5);
+        color: white;
+        text-align: center;
+        font-size: 2vw;
+        line-height: 4vw;
+        letter-spacing: 3px;
+    }
+}

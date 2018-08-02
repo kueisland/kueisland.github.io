@@ -36,3 +36,19 @@ h3 {
     display: table-cell;
     text-justify: trim !important;
 }
+
+footer {
+    position: fixed;
+    z-index: 200;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: rgba(10,80,115,0.5);
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 3px;
+}

@@ -126,8 +126,8 @@
 
 /* Add an active class to highlight the current page */
 .active {
-    background-color: rgb(10,80,115)!important;
-    color: white !important;
+    background-color: white !important;
+    color: rgb(10,80,115) !important;
 }
 
 .text-margin-first {

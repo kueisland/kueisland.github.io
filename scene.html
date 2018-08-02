@@ -82,6 +82,20 @@
             float: left;
         }
 
+        .all-fullhd-left-4 {
+            width: calc(1417px - 8.5px);
+            margin: 0 calc(50% - 960px);
+            margin-right: 0px;
+            float: left;
+        }
+
+        .all-fullhd-right-4 {
+            width: calc(503px - 8.5px);
+            margin: 0 calc(50% - 960px);
+            margin-left: 0px;
+            float: left;
+        }
+
         .about {
             width: 100%;
             padding: 20px;
@@ -371,11 +385,11 @@
         }
 
         .img-09-mobile {
-            width: 50%;
+            width: 100%;
             margin-top: 0px;
             margin-bottom: 0px;
-            margin-left: 25%;
-            margin-right: 25%;
+            margin-left: 0%;
+            margin-right: 0%;
             float: left;
         }
 
@@ -433,7 +447,7 @@
         <div class="topnav" id="myTopnav" style="position:fixed;top:0;z-index:500;">
             <a id="logo" class="font-weight logo" href="javascript:window.top.subToHomePage();" style="float:left;padding:0;text-align:left;">
                 <div style="width:50px;float:left;"><img src="image/logo.png" style="width:100%;" /></div>
-                <div style="min-width:50px;float:left;">
+                <div class="topnavlogo-text" style="min-width:50px;float:left;line-height:25px;padding-top:8px;">
                     賞<font style="margin-left:80px;">鯨</font><br />
                     旅客服務中心
                 </div>
@@ -472,15 +486,24 @@
                 </div>
             </div>
         </div>
-        <div class="all-fullhd">
-            <div class="about">
-                <img class="img-03" src="image/scene-03.jpg" data-aos="fade-left" data-aos-duration="3000" alt="" />
-                <img class="img-04" src="image/scene-04.jpg" data-aos="fade-right" data-aos-duration="3000" alt="" />
-                <div style="padding:20px;" data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="3000">
+        <div class="all-fullhd-left-4">
+            <div class="about" style="padding-right:2px;">
+                <img class="img-11" src="image/scene-03.jpg" data-aos="fade-left" data-aos-duration="3000" alt="" />
+                <div style="padding:20px;margin:0 165px;" data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="3000">
                     <h2>龜山朝日</h2>
                     <p>
                         「龜山朝日」名列「蘭陽八景」之一，是來到蘭陽平原必賞的美景之一，但這並非想看就看得到，還得要看老天爺的臉
                         色，只有在天候條件允許下，才得以飽覽「龜山朝日」的美景。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="all-fullhd-right-4">
+            <div class="about" style="padding-left:2px;">
+                <img class="img-12" src="image/scene-04.jpg" data-aos="fade-right" data-aos-duration="3000" alt="" />
+                <div style="padding:40px;" data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="3000">
+                    <p>
+                        龜山島至高點衛哨站相當於台北101大樓85層樓高。
                     </p>
                 </div>
             </div>

@@ -7,6 +7,7 @@
     <title>概要</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/modal-video.min.css">
     <link rel="stylesheet" href="css/font.css">
 
@@ -87,9 +88,9 @@
             margin-right: 30%;
             margin-left: 10%;
             margin-bottom: 50vh;
-            min-height:300px;
-            box-sizing:border-box;
-            color:white;
+            min-height: 300px;
+            box-sizing: border-box;
+            color: white;
         }
 
         .box-mobile-first {
@@ -108,12 +109,12 @@
             color: white;
         }
 
-        .text-pc{
-            display:block;
+        .text-pc {
+            display: block;
         }
 
-        .text-mobile{
-            display:none;
+        .text-mobile {
+            display: none;
         }
 
         @media only screen and (max-width: 799px) {
@@ -126,7 +127,7 @@
                 margin-bottom: 10vh;
                 min-height: 1vh;
                 box-sizing: border-box;
-                color:black;
+                color: black;
             }
 
             .box-mobile-2 {
@@ -138,7 +139,7 @@
                 margin-bottom: 10vh;
                 min-height: 1vh;
                 box-sizing: border-box;
-                color:black;
+                color: black;
             }
 
             .text-pc {
@@ -172,7 +173,7 @@
         <div class="topnav" id="myTopnav" style="position:fixed;top:0;z-index:500;">
             <a id="logo" class="font-weight logo" href="javascript:window.top.subToHomePage();" style="float:left;padding:0;text-align:left;">
                 <div style="width:50px;float:left;"><img src="image/logo.png" style="width:100%;" /></div>
-                <div style="min-width:50px;float:left;">
+                <div class="topnavlogo-text" style="min-width:50px;float:left;">
                     賞<font style="margin-left:80px;">鯨</font><br />
                     旅客服務中心
                 </div>
@@ -189,8 +190,8 @@
             <a id="text4" class="text-margin" href="javascript:window.top.subToSubPage('itinerary.html');">
                 如何登島
             </a>
-            <a id="text5" href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <img src="image/menu.svg" alt="Alternate Text" />
+            <a id="text5" href="javascript:void(0);" class="icon" onclick="myFunction()" style="padding-top:5px;">
+                <i class="fas fa-bars fa-2x"></i>
             </a>
         </div>
         <div style="width:100%;height:88px;"></div>

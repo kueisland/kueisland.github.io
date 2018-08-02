@@ -206,20 +206,27 @@
     display: block;
 }
 
+.topnavlogo-text {
+    display:block;
+}
+
 @media screen and (max-width: 799px) {
     .logo {
         margin-left: 0vw;
     }
 
     .text-margin-first {
-        margin-left: calc(100% - 634px - 0vw);
+        margin-left: calc(100% - 492px - 0vw);
+    }
+    .topnavlogo-text {
+        display: none;
     }
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 630px) {
     .logo {
-        margin-left: calc(50% - 79px);
+        margin-left: calc(50% - 33px);
     }
 
     .text-margin-first {
@@ -277,23 +284,9 @@
         }
 }
 
-@media screen and (max-width: 369px) {
-    .logo {
-        margin-left: calc(100% - 260px);
-    }
-}
-
 @media screen and (max-width: 348px) {
     .topnav .icon {
         margin-right: calc(0px);
-    }
-}
-
-@media screen and (max-width: 269px) {
-    .logo {
-        margin-left: calc(0px);
-        display:none!important;
-        overflow:hidden;
     }
 }
 
@@ -301,6 +294,10 @@
     .topnav .icon {
         float: right!important;
         margin-right: 0px;
+    }
+
+    .logo {
+        margin-left: calc(100% - 128px);
     }
 }
 

@@ -108,6 +108,14 @@
             color: white;
         }
 
+        .text-pc{
+            display:block;
+        }
+
+        .text-mobile{
+            display:none;
+        }
+
         @media only screen and (max-width: 799px) {
             .box-mobile {
                 background-color: rgba(22, 60, 141, 0);
@@ -132,6 +140,14 @@
                 box-sizing: border-box;
                 color:black;
             }
+
+            .text-pc {
+                display: none;
+            }
+
+            .text-mobile {
+                display: block;
+            }
         }
     </style>
 
@@ -150,7 +166,7 @@
                 <a class="active">概要</a>
                 <a onclick="window.top.subToSubPage('watch.html')">賞鯨追豚</a>
                 <a onclick="window.top.subToSubPage('scene.html')">島嶼風光</a>
-                <a onclick="window.top.subToSubPage('itinerary.html')"">如何登島</a>
+                <a onclick="window.top.subToSubPage('itinerary.html')" ">如何登島</a>
             </div>
         </div>
         <div class="topnav" id="myTopnav" style="position:fixed;top:0;z-index:500;">
@@ -182,20 +198,20 @@
     <div class="all-fullhd">
         <div class="about">
             <h1 class="text-center" style="margin-top:4rem;">認識龜山島</h1>
-            <div class="text-center box-mobile box-mobile-first">
+            <div class="text-center box-mobile box-mobile-first text-pc">
                 <p>
                     龜山島位於宜蘭縣頭城鎮東方12公里的海面上，全島面積約2.9平方公里，以外貌酷似海龜而得名，龜山島因地勢顯要，
                     曾列為軍事重地成為國軍駐防的管制區，於2000年8月1日龜山島正式開放觀光，並由東北角管理處負責經營，也因島上特殊豐富且原始的自然生態資源，定位為海上生態公園。
                 </p>
             </div>
-            <div class="text-center box-mobile-2">
+            <div class="text-center box-mobile-2 text-pc">
                 <p>
-                    龜山島為火山島地質。目前仍有溫泉及硫氣孔等火山相關活動，屬於活火山。其岩層主要是由安山岩質的熔岩流和火山碎屑岩所分別構成。熱螢光定年結果與地層分析顯示龜山島在過去7000年間至少有4次以上之噴發記錄。 
+                    龜山島為火山島地質。目前仍有溫泉及硫氣孔等火山相關活動，屬於活火山。其岩層主要是由安山岩質的熔岩流和火山碎屑岩所分別構成。熱螢光定年結果與地層分析顯示龜山島在過去7000年間至少有4次以上之噴發記錄。
                     島上最高點為龜甲山峰海拔398公尺，加上3米的兩層觀景臺共高401公尺，
                     稱為「401高地」，為台灣離島的第二高山，僅次於蘭嶼紅頭山。緊鄰峭壁的龜頭山峰高達239公尺，而龜尾山峰則為141公尺。 島上有溫泉、冷泉、海蝕洞、硫氣孔等景觀。特殊動植物生態及海洋資源相當豐富。
                 </p>
             </div>
-            <div class="text-center box-mobile">
+            <div class="text-center box-mobile text-pc">
                 <p>
                     1977年以前，龜山島向來都有人居住，後來民國政府為軍事需要，將居民強制遷居至台灣本島，並在大溪里建立仁澤新村以安置遷徙過來的島民。1977年之後，直到現今都沒人定居島上，現在該島由海巡署頭城大隊管理。
                 </p>
@@ -218,6 +234,31 @@
                 <!-- Add Arrows -->
                 <!-- <div class="swiper-button-next"></div> -->
                 <!-- <div class="swiper-button-prev"></div> -->
+            </div>
+        </div>
+    </div>
+    <div class="all-fullhd text-mobile">
+        <div class="about">
+            <div class="text-center box-mobile box-mobile-first">
+                <p>
+                    龜山島位於宜蘭縣頭城鎮東方12公里的海面上，全島面積約2.9平方公里，以外貌酷似海龜而得名，龜山島因地勢顯要，
+                    曾列為軍事重地成為國軍駐防的管制區，於2000年8月1日龜山島正式開放觀光，並由東北角管理處負責經營，也因島上特殊豐富且原始的自然生態資源，定位為海上生態公園。
+                </p>
+            </div>
+            <div class="text-center box-mobile-2">
+                <p>
+                    龜山島為火山島地質。目前仍有溫泉及硫氣孔等火山相關活動，屬於活火山。其岩層主要是由安山岩質的熔岩流和火山碎屑岩所分別構成。熱螢光定年結果與地層分析顯示龜山島在過去7000年間至少有4次以上之噴發記錄。
+                    島上最高點為龜甲山峰海拔398公尺，加上3米的兩層觀景臺共高401公尺，
+                    稱為「401高地」，為台灣離島的第二高山，僅次於蘭嶼紅頭山。緊鄰峭壁的龜頭山峰高達239公尺，而龜尾山峰則為141公尺。 島上有溫泉、冷泉、海蝕洞、硫氣孔等景觀。特殊動植物生態及海洋資源相當豐富。
+                </p>
+            </div>
+            <div class="text-center box-mobile">
+                <p>
+                    1977年以前，龜山島向來都有人居住，後來民國政府為軍事需要，將居民強制遷居至台灣本島，並在大溪里建立仁澤新村以安置遷徙過來的島民。1977年之後，直到現今都沒人定居島上，現在該島由海巡署頭城大隊管理。
+                </p>
+                <p>
+                    2000年開始，由於政府提倡觀光，對於解除軍事管制的龜山島，以抽籤方式管制登島人數。一般遊客團體申請進入龜山島，須於預定登島日前三日至二十天日，以網路方式向交通部觀光局東北角暨宜蘭海岸國家風景區管理處提出申請。
+                </p>
             </div>
         </div>
     </div>

@@ -19,15 +19,15 @@
             background-color: transparent !important;
         }
 
-        .watch-box{
-            width:100%;
+        .watch-box {
+            width: 100%;
             height: calc(100vh - 88px);
-            overflow:hidden;
+            overflow: hidden;
         }
 
         .all {
             width: 1140px;
-            margin:0 calc(50% - 570px);
+            margin: 0 calc(50% - 570px);
         }
 
         .about {
@@ -40,8 +40,8 @@
                 margin-bottom: 20px;
             }
 
-        .title-display{
-            display:block;
+        .title-display {
+            display: block;
         }
 
         .text-center {
@@ -63,15 +63,15 @@
         }
 
         .scontainer-2 {
-            top: 5.5%;
+            top: 7%;
             left: calc(50% - 680px);
             width: 250px;
-            height: 525px;
+            height: 475px;
             z-index: 100;
             background: rgba(2,136,174,0.8);
             position: absolute;
             display: block;
-            text-justify:trim;
+            text-justify: trim;
         }
 
         .scontainer-3 {
@@ -87,14 +87,14 @@
             position: fixed;
             z-index: 5;
             right: calc(50% - 655px);
-            top: 475px;
+            top: 520px;
             width: 100px;
-            height: 270px;
+            height: 180px;
             background-image: url('image/swiper-right.svg');
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            opacity:1;
+            opacity: 1;
         }
 
         .swiper-slide-text {
@@ -113,7 +113,7 @@
             text-align: left;
             line-height: 27px;
             letter-spacing: 6px;
-            text-justify:trim!important;
+            text-justify: trim !important;
         }
 
         .swiper-slide > a > img {
@@ -153,10 +153,10 @@
             }
 
             .scontainer-2 {
-                top: -2%;
+                top: 7%;
                 left: 0;
                 width: 250px;
-                height: 500px;
+                height: 475px;
                 z-index: 100;
                 background: rgba(2,136,174,0.8);
                 position: absolute;
@@ -167,9 +167,9 @@
                 position: fixed;
                 z-index: 5;
                 right: 0;
-                top: 475px;
+                top: 500px;
                 width: 100px;
-                height: 270px;
+                height: 180px;
                 background-image: url('image/swiper-right.svg');
                 background-position: center;
                 background-repeat: no-repeat;
@@ -189,9 +189,9 @@
                 position: fixed;
                 z-index: 5;
                 right: 0;
-                top: calc(80% - 100px);
+                top: calc(85% - 90px);
                 width: 100px;
-                height: 200px;
+                height: 180px;
                 background-image: url('image/swiper-right.svg');
                 background-position: center;
                 background-repeat: no-repeat;
@@ -216,7 +216,7 @@
                 top: 2%;
                 left: 0;
                 width: 250px;
-                height: 550px;
+                height: 475px;
                 z-index: 100;
                 background: rgba(2,136,174,0.8);
                 position: absolute;
@@ -229,7 +229,7 @@
                 right: 0;
                 top: calc(50% - 100px);
                 width: 100px;
-                height: 200px;
+                height: 180px;
                 background-image: url('image/swiper-right.svg');
                 background-position: center;
                 background-repeat: no-repeat;
@@ -376,7 +376,7 @@
                         </div>
                     </div>
                     <!-- Add Arrows -->
-                    <div class="swiper-button-next" onclick="callShowSlideId()"></div>
+                    <div id="NextBtn" class="swiper-button-next" onclick="callShowSlideId()"></div>
 
                 </div>
                 <div id="showSlideId" style="display: none;">0</div>
@@ -385,7 +385,7 @@
                         <div class="swiper-slide-text">
                             <h3>瓶鼻海豚</h3>
                             <p class="swiper-slide-text-content">
-                                台灣俗稱：大白腹仔。<br />絕大部份人對於海豚的印象，幾乎都來自他們，也是擔任海洋育樂世界的表演者，通常嘴吻短粗，但也有例外的，
+                                台灣俗稱：大白腹仔。<br />大部份人對於海豚的印象，都來自他們，通常嘴吻短粗，但也有例外的，
                                 體形粗壯背部呈黑灰色，腹部下呈現灰白色。
                             </p>
                         </div>
@@ -395,7 +395,7 @@
                             <h3>長吻飛旋原海豚</h3>
                             <p class="swiper-slide-text-content">
                                 台灣俗稱：白肚仔、尖嘴仔。<br />因時常有躍出水面飛旋翻滾的動作而得名。嘴尖、體色都具有明顯的三層色區是他極易辨識的特徵。
-                                體長約70~240公分，體重可達80公斤。是台灣地區最常見的海豚之一，是非常有活力的動物。
+                                體長約70~240公分，體重可達80公斤。
                             </p>
                         </div>
                     </div>
@@ -403,8 +403,8 @@
                         <div class="swiper-slide-text">
                             <h3>花紋海豚</h3>
                             <p class="swiper-slide-text-content">
-                                台灣俗稱：和尚頭。<br />是中型海豚，十分容易辨別的海豚，在身體表面呈白色花紋般的線條刮痕，年齡長線條刮痕越多，
-                                還有如鐮刀般高大的背鰭也是重要的海上辨識根據。體長約1.2~4.0公尺，體重可達410~510公斤。
+                                台灣俗稱：和尚頭。<br />是中型海豚，在身體表面呈白色花紋般的線條刮痕，年齡長線條刮痕越多，
+                                有如鐮刀般高大的背鰭是海上辨識根據。體長約1.2~4.0公尺，體重可達410~510公斤。
                             </p>
                         </div>
                     </div>
@@ -412,7 +412,7 @@
                         <div class="swiper-slide-text">
                             <h3>真海豚</h3>
                             <p class="swiper-slide-text-content">
-                                台灣俗稱：烏魚吳。<br />背部為黑色及黑棕色，腹部為黃白色，背鰭全黑位於中間，多半海豚多喜歡群體活動，此海豚更是如此，時常一出現就是一百或上千隻。
+                                台灣俗稱：烏魚吳。<br />背部為黑色及黑棕色，腹部為黃白色，背鰭全黑位於中間，多半海豚喜歡群體活動，一出現就是一百或上千隻。
                             </p>
                         </div>
                     </div>
@@ -420,8 +420,8 @@
                         <div class="swiper-slide-text">
                             <h3>弗氏海豚</h3>
                             <p class="swiper-slide-text-content">
-                                台灣俗名：大肥仔。<br />身材肥壯，從嘴吻開始就有一條黑色斑紋，區分為背部及腹部，背部為藍黑色，腹部為白色，短嘴吻、胸、背及尾鰭也為短形。
-                                體長約1~2.7公尺，體重達210公斤，個性害羞敏感，不會主動接近。
+                                台灣俗名：大肥仔。<br />身材肥壯，從嘴吻開始有一條黑色斑紋，區分為背部及腹部，背部為藍黑色，腹部為白色，嘴吻、胸、背及尾鰭為短形。
+                                體長約1~2.7公尺，體重達210公斤。
                             </p>
                         </div>
                     </div>
@@ -429,8 +429,8 @@
                         <div class="swiper-slide-text">
                             <h3>熱帶斑海豚</h3>
                             <p class="swiper-slide-text-content">
-                                台灣俗名：花鹿仔。<br />出生時幾無斑點，隨著時間年齡增長，斑點會越來越多
-                                。背鰭呈鐮刀形、嘴為尖有白點，在中海行為極為活躍。體長約85~260，體重達120公斤。是一種主要分布在熱帶的小型海豚。
+                                台灣俗名：花鹿仔。<br />出生時幾無斑點，隨著時間年齡增長，斑點越來越多
+                                。背鰭呈鐮刀形、嘴為尖有白點，在中海行為極為活躍。體長約85~260，體重達120公斤。
                             </p>
                         </div>
                     </div>
@@ -440,7 +440,7 @@
                         <div class="swiper-slide-text">
                             <h3>瓶鼻海豚</h3>
                             <p class="swiper-slide-text-content">
-                                台灣俗稱：大白腹仔。<br />絕大部份人對於海豚的印象，幾乎都來自他們，也是擔任海洋育樂世界的表演者，通常嘴吻短粗，但也有例外的，
+                                台灣俗稱：大白腹仔。<br />大部份人對於海豚的印象，都來自他們，通常嘴吻短粗，但也有例外的，
                                 體形粗壯背部呈黑灰色，腹部下呈現灰白色。
                             </p>
                             <p style="width:100%;height:97px;"></p>
@@ -451,7 +451,7 @@
                             <h3>長吻飛旋原海豚</h3>
                             <p class="swiper-slide-text-content">
                                 台灣俗稱：白肚仔、尖嘴仔。<br />因時常有躍出水面飛旋翻滾的動作而得名。嘴尖、體色都具有明顯的三層色區是他極易辨識的特徵。
-                                體長約70~240公分，體重可達80公斤。是台灣地區最常見的海豚之一，是非常有活力的動物。
+                                體長約70~240公分，體重可達80公斤。
                             </p>
                             <p style="width:100%;height:97px;"></p>
                         </div>
@@ -460,8 +460,8 @@
                         <div class="swiper-slide-text">
                             <h3>花紋海豚</h3>
                             <p class="swiper-slide-text-content">
-                                台灣俗稱：和尚頭。<br />是中型海豚，十分容易辨別的海豚，在身體表面呈白色花紋般的線條刮痕，年齡長線條刮痕越多，
-                                還有如鐮刀般高大的背鰭也是重要的海上辨識根據。體長約1.2~4.0公尺，體重可達410~510公斤。
+                                台灣俗稱：和尚頭。<br />是中型海豚，在身體表面呈白色花紋般的線條刮痕，年齡長線條刮痕越多，
+                                還有如鐮刀般高大的背鰭是海上辨識根據。體長約1.2~4.0公尺，體重可達410~510公斤。
                             </p>
                             <p style="width:100%;height:97px;"></p>
                         </div>
@@ -470,7 +470,7 @@
                         <div class="swiper-slide-text">
                             <h3>真海豚</h3>
                             <p class="swiper-slide-text-content">
-                                台灣俗稱：烏魚吳。<br />背部為黑色及黑棕色，腹部為黃白色，背鰭全黑位於中間，多半海豚多喜歡群體活動，此海豚更是如此，時常一出現就是一百或上千隻。
+                                台灣俗稱：烏魚吳。<br />背部為黑色及黑棕色，腹部為黃白色，背鰭全黑位於中間，時常一出現就是一百或上千隻。
                             </p>
                             <p style="width:100%;height:97px;"></p>
                         </div>
@@ -479,8 +479,8 @@
                         <div class="swiper-slide-text">
                             <h3>弗氏海豚</h3>
                             <p class="swiper-slide-text-content">
-                                台灣俗名：大肥仔。<br />身材肥壯，從嘴吻開始就有一條黑色斑紋，區分為背部及腹部，背部為藍黑色，腹部為白色，短嘴吻、胸、背及尾鰭也為短形。
-                                體長約1~2.7公尺，體重達210公斤，個性害羞敏感，不會主動接近。
+                                台灣俗名：大肥仔。<br />身材肥壯，從嘴吻開始就有一條黑色斑紋，區分為背部及腹部，背部為藍黑色，腹部為白色，嘴吻、胸、背及尾鰭為短形。
+                                體長約1~2.7公尺，體重達210公斤。
                             </p>
                             <p style="width:100%;height:97px;"></p>
                         </div>
@@ -489,8 +489,8 @@
                         <div class="swiper-slide-text">
                             <h3>熱帶斑海豚</h3>
                             <p class="swiper-slide-text-content">
-                                台灣俗名：花鹿仔。<br />出生時幾無斑點，隨著時間年齡增長，斑點會越來越多
-                                。背鰭呈鐮刀形、嘴為尖有白點，在中海行為極為活躍。體長約85~260，體重達120公斤。是一種主要分布在熱帶的小型海豚。
+                                台灣俗名：花鹿仔。<br />出生時幾無斑點，隨著時間年齡增長，斑點越來越多
+                                。背鰭呈鐮刀形、嘴為尖有白點，在中海行為極為活躍。體長約85~260，體重達120公斤。
                             </p>
                             <p style="width:100%;height:97px;"></p>
                         </div>
@@ -501,7 +501,8 @@
     </div>
 </body>
 <script>
-        var swiper = new Swiper('#card-view', {
+    var swiper = new Swiper('#card-view', {
+        speed: 200,
           slidesPerView: 1,
           slidesPerGroup: 1,
           loop: true,
@@ -524,6 +525,8 @@
     var i;
       var x = document.getElementsByClassName("myswiper-slide");
       var y = document.getElementsByClassName("myswiper-slide-mobile");
+      document.getElementById("NextBtn").disabled = true;
+      
     for (i = 0; i < x.length; i++) {
         x[i].classList.remove('slide-text-show');
         y[i].classList.remove('slide-text-show');
@@ -533,11 +536,14 @@
       y[n].classList.add('slide-text-show');
     n++;
     if (n > (x.length - 1)) n=0;
-    document.getElementById("showSlideId").innerHTML=n;
+      document.getElementById("showSlideId").innerHTML = n;
+      setTimeout(function () {
+          document.getElementById("NextBtn").disabled = false;
+      },200);
   }
 
   function callShowSlideId(){
-    showSwiper(parseInt(document.getElementById("showSlideId").innerHTML));
+      if (document.getElementById("NextBtn").disabled == false) showSwiper(parseInt(document.getElementById("showSlideId").innerHTML));
   }
 
   setTimeout(function(){

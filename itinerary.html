@@ -284,17 +284,17 @@
                 <div style="clear:both;"></div>
             </a>
             <a style="width:0px;height:50px;padding:0;"></a>
-            <a href="javascript:window.top.subToSubPage('outline.html');" class="text-margin-first">概要</a>
-            <a class="text-margin" href="javascript:window.top.subToSubPage('watch.html');">
+            <a id="text1" href="javascript:window.top.subToSubPage('outline.html');" class="text-margin-first">概要</a>
+            <a id="text2" class="text-margin" href="javascript:window.top.subToSubPage('watch.html');">
                 賞鯨追豚
             </a>
-            <a class="text-margin" href="javascript:window.top.subToSubPage('scene.html');">
+            <a id="text3" class="text-margin" href="javascript:window.top.subToSubPage('scene.html');">
                 島嶼風光
             </a>
-            <a class="active text-margin" href="#about">
+            <a id="text4" class="active text-margin" href="#about">
                 如何登島
             </a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a id="text5" href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <img src="image/menu.svg" alt="Alternate Text" />
             </a>
         </div>
@@ -533,16 +533,41 @@
         console.log(scroll);
         var x = document.getElementById("myTopnav");
         var y = document.getElementById("logo");
+        var t1 = document.getElementById("text1");
+        var t2 = document.getElementById("text2");
+        var t3 = document.getElementById("text3");
+        var t4 = document.getElementById("text4");
+        var t5 = document.getElementById("text5");
         if (scroll > 40) {
             x.classList.remove("Topnav-down");
             x.classList.add("Topnav-up");
             y.classList.remove("Topnav-up-2");
             y.classList.add("Topnav-down-2");
+            t1.classList.remove("Topnav-up-2");
+            t1.classList.add("Topnav-down-2");
+            t2.classList.remove("Topnav-up-2");
+            t2.classList.add("Topnav-down-2");
+            t3.classList.remove("Topnav-up-2");
+            t3.classList.add("Topnav-down-2");
+            t4.classList.remove("Topnav-up-2");
+            t4.classList.add("Topnav-down-2");
+            t5.classList.remove("Topnav-up-2");
+            t5.classList.add("Topnav-down-2");
         } else {
             x.classList.remove("Topnav-up");
             x.classList.add("Topnav-down");
             y.classList.remove("Topnav-down-2");
             y.classList.add("Topnav-up-2");
+            t1.classList.remove("Topnav-down-2");
+            t1.classList.add("Topnav-up-2");
+            t2.classList.remove("Topnav-down-2");
+            t2.classList.add("Topnav-up-2");
+            t3.classList.remove("Topnav-down-2");
+            t3.classList.add("Topnav-up-2");
+            t4.classList.remove("Topnav-down-2");
+            t4.classList.add("Topnav-up-2");
+            t5.classList.remove("Topnav-down-2");
+            t5.classList.add("Topnav-up-2");
         }
     });
 </script>

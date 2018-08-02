@@ -303,3 +303,59 @@
         margin-right: 0px;
     }
 }
+
+.Topnav-up {
+    animation: Topnav-up 1S linear forwards;
+}
+
+@keyframes Topnav-up {
+    from {
+        transform: translateY(0%);
+    }
+
+    to {
+        transform: translateY(-25%);
+    }
+}
+
+.Topnav-down {
+    animation: Topnav-down 1S linear forwards;
+}
+
+@keyframes Topnav-down {
+    from {
+        transform: translateY(-25%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+.Topnav-up-2 {
+    animation: Topnav-up-2 1S linear forwards;
+}
+
+@keyframes Topnav-up-2 {
+    from {
+        transform: translateY(15%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+.Topnav-down-2 {
+    animation: Topnav-down-2 1S linear forwards;
+}
+
+@keyframes Topnav-down-2 {
+    from {
+        transform: translateY(0%);
+    }
+
+    to {
+        transform: translateY(15%);
+    }
+}

@@ -304,7 +304,7 @@
             </div>
         </div>
         <div class="topnav" id="myTopnav" style="position:fixed;top:0;z-index:500;">
-            <a class="font-weight logo" href="javascript:window.top.subToHomePage();" style="float:left;padding:0;text-align:left;">
+            <a id="logo" class="font-weight logo" href="javascript:window.top.subToHomePage();" style="float:left;padding:0;text-align:left;">
                 <div style="width:50px;float:left;"><img src="image/logo.png" style="width:100%;" /></div>
                 <div style="min-width:50px;float:left;">
                     賞<font style="margin-left:80px;">鯨</font><br />
@@ -501,6 +501,7 @@
     </div>
 </body>
 <script>
+
     var swiper = new Swiper('#card-view', {
         speed: 200,
           slidesPerView: 1,
@@ -580,5 +581,24 @@
     setTimeout(function () {
         window.top.removeLoad();
     }, 1500);
+</script>
+<script>
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        console.log(scroll);
+        var x = document.getElementById("myTopnav");
+        var y = document.getElementById("logo");
+        if (scroll > 40) {
+            x.classList.remove("Topnav-down");
+            x.classList.add("Topnav-up");
+            y.classList.remove("Topnav-up-2");
+            y.classList.add("Topnav-down-2");
+        } else {
+            x.classList.remove("Topnav-up");
+            x.classList.add("Topnav-down");
+            y.classList.remove("Topnav-down-2");
+            y.classList.add("Topnav-up-2");
+        }
+    });
 </script>
 </html>

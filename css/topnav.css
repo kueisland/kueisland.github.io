@@ -305,7 +305,7 @@
 }
 
 .Topnav-up {
-    animation: Topnav-up 1S linear forwards;
+    animation: Topnav-up 0.5S linear forwards;
 }
 
 @keyframes Topnav-up {
@@ -319,7 +319,7 @@
 }
 
 .Topnav-down {
-    animation: Topnav-down 1S linear forwards;
+    animation: Topnav-down 0.5S linear forwards;
 }
 
 @keyframes Topnav-down {
@@ -333,7 +333,7 @@
 }
 
 .Topnav-up-2 {
-    animation: Topnav-up-2 1S linear forwards;
+    animation: Topnav-up-2 0.5S linear forwards;
 }
 
 @keyframes Topnav-up-2 {
@@ -347,7 +347,7 @@
 }
 
 .Topnav-down-2 {
-    animation: Topnav-down-2 1S linear forwards;
+    animation: Topnav-down-2 0.5S linear forwards;
 }
 
 @keyframes Topnav-down-2 {

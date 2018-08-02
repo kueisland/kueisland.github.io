@@ -264,4 +264,23 @@
         window.top.removeLoad();
     }, 1500);
 </script>
+<script>
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        console.log(scroll);
+        var x = document.getElementById("myTopnav");
+        var y = document.getElementById("logo");
+        if (scroll > 40) {
+            x.classList.remove("Topnav-down");
+            x.classList.add("Topnav-up");
+            y.classList.remove("Topnav-up-2");
+            y.classList.add("Topnav-down-2");
+        } else {
+            x.classList.remove("Topnav-up");
+            x.classList.add("Topnav-down");
+            y.classList.remove("Topnav-down-2");
+            y.classList.add("Topnav-up-2");
+        }
+    });
+</script>
 </html>

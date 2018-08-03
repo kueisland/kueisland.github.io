@@ -45,11 +45,10 @@ footer {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
-    background: rgba(10,80,115,0.5);
     color: white;
     text-align: center;
-    font-size: 18px;
-    line-height: 36px;
+    font-size: 12px;
+    line-height: 24px;
     letter-spacing: 3px;
     opacity: 1;
 }
@@ -67,11 +66,10 @@ footer:hover {
         width: 100%;
         padding: 10px;
         box-sizing: border-box;
-        background: rgba(10,80,115,0.5);
         color: white;
         text-align: center;
-        font-size: 2vw;
-        line-height: 4vw;
+        font-size: 12px;
+        line-height: 24px;
         letter-spacing: 3px;
         opacity: 1;
     }
@@ -86,11 +84,10 @@ footer:hover {
         width: 100%;
         padding: 10px;
         box-sizing: border-box;
-        background: rgba(10,80,115,1);
         color: white;
         text-align: center;
-        font-size: 2vw;
-        line-height: 4vw;
+        font-size: 12px;
+        line-height: 24px;
         letter-spacing: 3px;
         opacity: 1;
     }

@@ -51,6 +51,11 @@ footer {
     font-size: 18px;
     line-height: 36px;
     letter-spacing: 3px;
+    opacity: 1;
+}
+
+footer:hover {
+    opacity: 1;
 }
 
 @media only screen and (max-width: 1139px) {
@@ -68,5 +73,44 @@ footer {
         font-size: 2vw;
         line-height: 4vw;
         letter-spacing: 3px;
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    footer {
+        position: fixed;
+        z-index: 200;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        background: rgba(10,80,115,0.5);
+        color: white;
+        text-align: center;
+        font-size: 2vw;
+        line-height: 4vw;
+        letter-spacing: 3px;
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 799px) {
+    footer {
+        position: fixed;
+        z-index: 200;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        background: rgba(10,80,115,0.5);
+        color: white;
+        text-align: center;
+        font-size: 2vw;
+        line-height: 4vw;
+        letter-spacing: 3px;
+        opacity: 1;
     }
 }

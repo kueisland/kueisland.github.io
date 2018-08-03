@@ -86,13 +86,13 @@ footer:hover {
         width: 100%;
         padding: 10px;
         box-sizing: border-box;
-        background: rgba(10,80,115,0.5);
+        background: rgba(10,80,115,1);
         color: white;
         text-align: center;
         font-size: 2vw;
         line-height: 4vw;
         letter-spacing: 3px;
-        opacity: 0;
+        opacity: 1;
     }
 }
 

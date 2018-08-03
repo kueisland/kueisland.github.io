@@ -104,8 +104,8 @@ footer:hover {
         box-sizing: border-box;
         color: white;
         text-align: center;
-        font-size: 2vw;
-        line-height: 4vw;
+        font-size: 1vw;
+        line-height: 2vw;
         letter-spacing: 3px;
         opacity: 1;
     }

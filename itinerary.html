@@ -220,7 +220,7 @@
             }
 
             .item-2 {
-                margin-top: 135vh;
+                margin-top: 40px;
                 position: relative;
                 width: 100%;
             }
@@ -310,7 +310,7 @@
 
 
 </head>
-<body style="background-color: transparent!important;">
+<body style="background-color: transparent!important;" onresize="myResize()">
     <div class="all">
         <div id="vidtop-content" style="display:none;">
             <div class="vid-info">
@@ -346,137 +346,246 @@
         </div>
         <div style="width:100%;height:88px;"></div>
     </div>
-    <div class="item" style="margin-top:0px">
-        <div class="item-up-1">
-            <div class="all">
-                <div class="img img-02">
-                    <div class="item-up-2">二合一： 賞鯨+繞島</div>
+    <div id="pc">
+        <div class="item" style="margin-top:0px">
+            <div class="item-up-1">
+                <div class="all">
+                    <div class="img img-03">
+                        <div class="item-up-2">二合一： 賞鯨+繞島</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-down"></div>
+            <div class="item-up-3">
+                <div class="all">
+                    <div class="css_table">
+                        <div class="css_tr">
+                            <div class="css_td" style="width:4rem;">船班：</div>
+                            <div class="css_td">0 8 : 0 0 、0 9 : 0 0 、 1 3 : 0 0 、1 5 : 0 0</div>
+                        </div>
+                        <div class="css_tr">
+                            <div class="css_td">時間：</div>
+                            <div class="css_td">約2 . 5 - 3 小時</div>
+                        </div>
+                        <div class="css_tr">
+                            <div class="css_td">費用：</div>
+                            <div class="css_td">個人 $ 1 2 0 0 、團體 $ 1 0 0 0<br />另有網路預購鯨喜價：請來電洽詢</div>
+                        </div>
+                        <div class="css_tr">
+                            <div class="css_td">內容：</div>
+                            <div class="css_td">A . 賞鯨 + 環繞龜山島 + 船票 B . 報關 + 專業解說 C . 2 0 0 萬意外險 D . 2 0 0萬團體傷害險</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="item-down"></div>
-        <div class="item-up-3">
-            <div class="all">
-                <div class="css_table">
-                    <div class="css_tr">
-                        <div class="css_td" style="width:4rem;">船班：</div>
-                        <div class="css_td">0 8 : 0 0 、0 9 : 0 0 、 1 3 : 0 0 、1 5 : 0 0</div>
+        <div style="width:100%;height:10vh;"></div>
+        <div class="item">
+            <div class="item-up-1">
+                <div class="all">
+                    <div class="img img-01">
+                        <div class="item-up-2">二合一： 登島+繞島</div>
                     </div>
-                    <div class="css_tr">
-                        <div class="css_td">時間：</div>
-                        <div class="css_td">約2 . 5 - 3 小時</div>
+                </div>
+            </div>
+            <div class="item-down"></div>
+            <div class="item-up-3">
+                <div class="all">
+                    <div class="css_table">
+                        <div class="css_tr">
+                            <div class="css_td" style="width:4rem;">船班：</div>
+                            <div class="css_td">0 9 : 0 0 、1 3 : 0 0</div>
+                        </div>
+                        <div class="css_tr">
+                            <div class="css_td">時間：</div>
+                            <div class="css_td">約2 . 5 - 3 小時</div>
+                        </div>
+                        <div class="css_tr">
+                            <div class="css_td">費用：</div>
+                            <div class="css_td">個人 $ 1 2 0 0 、團體 $ 1 0 0 0<br />另有網路預購鯨喜價：請來電洽詢</div>
+                        </div>
+                        <div class="css_tr">
+                            <div class="css_td">內容：</div>
+                            <div class="css_td">A. 登島 + 環繞龜山島 + 船票   B. 報關 + 專業解說 C. 200萬意外險 D. 200萬團體傷害</div>
+                        </div>
                     </div>
-                    <div class="css_tr">
-                        <div class="css_td">費用：</div>
-                        <div class="css_td">個人 $ 1 2 0 0 、團體 $ 1 0 0 0<br />另有網路預購鯨喜價：請來電洽詢</div>
+                </div>
+            </div>
+        </div>
+        <div style="width:100%;height:10vh;"></div>
+        <div class="item">
+            <div class="item-up-1">
+                <div class="all">
+                    <div class="img img-02">
+                        <div class="item-up-2">三合一：賞鯨+繞島+登島</div>
                     </div>
-                    <div class="css_tr">
-                        <div class="css_td">內容：</div>
-                        <div class="css_td">A . 賞鯨 + 環繞龜山島 + 船票 B . 報關 + 專業解說 C . 2 0 0 萬意外險 D . 2 0 0萬團體傷害險</div>
+                </div>
+            </div>
+            <div class="item-down"></div>
+            <div class="item-up-3">
+                <div class="all">
+                    <div class="css_table">
+                        <div class="css_tr">
+                            <div class="css_td" style="width:4rem;">船班：</div>
+                            <div class="css_td">0 9 : 0 0 、1 3 : 0 0</div>
+                        </div>
+                        <div class="css_tr">
+                            <div class="css_td">時間：</div>
+                            <div class="css_td">約 4 小時</div>
+                        </div>
+                        <div class="css_tr">
+                            <div class="css_td">費用：</div>
+                            <div class="css_td">個人 $1600、團體 $1500<br />另有網路預購鯨喜價：請來電洽詢</div>
+                        </div>
+                        <div class="css_tr">
+                            <div class="css_td">內容：</div>
+                            <div class="css_td">A. 賞鯨+登島+環繞龜山島    B. 船票+報關+專業解說 C. 200萬意外險 D. 200萬團體傷害險</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="width:100%;height:10vh;"></div>
+        <div class="item">
+            <div class="item-up-1">
+                <div class="all">
+                    <div class="img img-04">
+                        <div class="item-up-2">401： 401高地+登島+繞島</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-down"></div>
+            <div class="item-up-3">
+                <div class="all">
+                    <div class="css_table">
+                        <div class="css_tr">
+                            <div class="css_td" style="width:4rem;">船班：</div>
+                            <div class="css_td">0 8 : 0 0 <br />(5/1日正式開放,現在接受預約)</div>
+                        </div>
+                        <div class="css_tr">
+                            <div class="css_td">時間：</div>
+                            <div class="css_td">約 8 小時</div>
+                        </div>
+                        <div class="css_tr">
+                            <div class="css_td">費用：</div>
+                            <div class="css_td">每人 $1500(不含清潔費)<br />另有網路預購鯨喜價：請來電洽詢</div>
+                        </div>
+                        <div class="css_tr">
+                            <div class="css_td">內容：</div>
+                            <div class="css_td">A.401高地+登龜山島+ 環繞龜山島 + 船票 B. 專業解說 C. 200萬意外險 D. 200萬團體傷害險</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div style="width:100%;height:10vh;"></div>
-    <div class="item">
-        <div class="item-up-1">
-            <div class="all">
-                <div class="img img-01">
-                    <div class="item-up-2">二合一： 登島+繞島</div>
+
+    <div id="mobile">
+        <div style="margin-top:0px">
+            <div class="img img-03">
+                <div class="item-up-2">二合一： 賞鯨+繞島</div>
+            </div>
+            <div style="width:100%;height:40px;"></div>
+
+            <div class="css_table">
+                <div class="css_tr">
+                    <div class="css_td" style="width:4rem;">船班：</div>
+                    <div class="css_td">0 8 : 0 0 、0 9 : 0 0 、 1 3 : 0 0 、1 5 : 0 0</div>
+                </div>
+                <div class="css_tr">
+                    <div class="css_td">時間：</div>
+                    <div class="css_td">約2 . 5 - 3 小時</div>
+                </div>
+                <div class="css_tr">
+                    <div class="css_td">費用：</div>
+                    <div class="css_td">個人 $ 1 2 0 0 、團體 $ 1 0 0 0<br />另有網路預購鯨喜價：請來電洽詢</div>
+                </div>
+                <div class="css_tr">
+                    <div class="css_td">內容：</div>
+                    <div class="css_td">A . 賞鯨 + 環繞龜山島 + 船票 B . 報關 + 專業解說 C . 2 0 0 萬意外險 D . 2 0 0萬團體傷害險</div>
                 </div>
             </div>
         </div>
-        <div class="item-down"></div>
-        <div class="item-up-3">
-            <div class="all">
-                <div class="css_table">
-                    <div class="css_tr">
-                        <div class="css_td" style="width:4rem;">船班：</div>
-                        <div class="css_td">0 9 : 0 0 、1 3 : 0 0</div>
-                    </div>
-                    <div class="css_tr">
-                        <div class="css_td">時間：</div>
-                        <div class="css_td">約2 . 5 - 3 小時</div>
-                    </div>
-                    <div class="css_tr">
-                        <div class="css_td">費用：</div>
-                        <div class="css_td">個人 $ 1 2 0 0 、團體 $ 1 0 0 0<br />另有網路預購鯨喜價：請來電洽詢</div>
-                    </div>
-                    <div class="css_tr">
-                        <div class="css_td">內容：</div>
-                        <div class="css_td">A. 登島 + 環繞龜山島 + 船票   B. 報關 + 專業解說 C. 200萬意外險 D. 200萬團體傷害</div>
-                    </div>
+        <div style="width:100%;height:40px;"></div>
+        <div>
+            <div class="img img-01">
+                <div class="item-up-2">二合一： 登島+繞島</div>
+            </div>
+            <div style="width:100%;height:40px;"></div>
+
+            <div class="css_table">
+                <div class="css_tr">
+                    <div class="css_td" style="width:4rem;">船班：</div>
+                    <div class="css_td">0 9 : 0 0 、1 3 : 0 0</div>
+                </div>
+                <div class="css_tr">
+                    <div class="css_td">時間：</div>
+                    <div class="css_td">約2 . 5 - 3 小時</div>
+                </div>
+                <div class="css_tr">
+                    <div class="css_td">費用：</div>
+                    <div class="css_td">個人 $ 1 2 0 0 、團體 $ 1 0 0 0<br />另有網路預購鯨喜價：請來電洽詢</div>
+                </div>
+                <div class="css_tr">
+                    <div class="css_td">內容：</div>
+                    <div class="css_td">A. 登島 + 環繞龜山島 + 船票   B. 報關 + 專業解說 C. 200萬意外險 D. 200萬團體傷害</div>
+                </div>
+            </div>
+        </div>
+        <div style="width:100%;height:40px;"></div>
+        <div>
+            <div class="img img-02">
+                <div class="item-up-2">三合一：賞鯨+繞島+登島</div>
+            </div>
+            <div style="width:100%;height:40px;"></div>
+
+            <div class="css_table">
+                <div class="css_tr">
+                    <div class="css_td" style="width:4rem;">船班：</div>
+                    <div class="css_td">0 9 : 0 0 、1 3 : 0 0</div>
+                </div>
+                <div class="css_tr">
+                    <div class="css_td">時間：</div>
+                    <div class="css_td">約 4 小時</div>
+                </div>
+                <div class="css_tr">
+                    <div class="css_td">費用：</div>
+                    <div class="css_td">個人 $1600、團體 $1500<br />另有網路預購鯨喜價：請來電洽詢</div>
+                </div>
+                <div class="css_tr">
+                    <div class="css_td">內容：</div>
+                    <div class="css_td">A. 賞鯨+登島+環繞龜山島    B. 船票+報關+專業解說 C. 200萬意外險 D. 200萬團體傷害險</div>
+                </div>
+            </div>
+        </div>
+        <div style="width:100%;height:40px;"></div>
+        <div>
+            <div class="img img-04">
+                <div class="item-up-2">401： 401高地+登島+繞島</div>
+            </div>
+            <div style="width:100%;height:40px;"></div>
+
+            <div class="css_table">
+                <div class="css_tr">
+                    <div class="css_td" style="width:4rem;">船班：</div>
+                    <div class="css_td">0 8 : 0 0 <br />(5/1日正式開放,現在接受預約)</div>
+                </div>
+                <div class="css_tr">
+                    <div class="css_td">時間：</div>
+                    <div class="css_td">約 8 小時</div>
+                </div>
+                <div class="css_tr">
+                    <div class="css_td">費用：</div>
+                    <div class="css_td">每人 $1500(不含清潔費)<br />另有網路預購鯨喜價：請來電洽詢</div>
+                </div>
+                <div class="css_tr">
+                    <div class="css_td">內容：</div>
+                    <div class="css_td">A.401高地+登龜山島+ 環繞龜山島 + 船票 B. 專業解說 C. 200萬意外險 D. 200萬團體傷害險</div>
                 </div>
             </div>
         </div>
     </div>
-    <div style="width:100%;height:10vh;"></div>
-    <div class="item">
-        <div class="item-up-1">
-            <div class="all">
-                <div class="img img-03">
-                    <div class="item-up-2">三合一：賞鯨+繞島+登島</div>
-                </div>
-            </div>
-        </div>
-        <div class="item-down"></div>
-        <div class="item-up-3">
-            <div class="all">
-                <div class="css_table">
-                    <div class="css_tr">
-                        <div class="css_td" style="width:4rem;">船班：</div>
-                        <div class="css_td">0 9 : 0 0 、1 3 : 0 0</div>
-                    </div>
-                    <div class="css_tr">
-                        <div class="css_td">時間：</div>
-                        <div class="css_td">約 4 小時</div>
-                    </div>
-                    <div class="css_tr">
-                        <div class="css_td">費用：</div>
-                        <div class="css_td">個人 $1600、團體 $1500<br />另有網路預購鯨喜價：請來電洽詢</div>
-                    </div>
-                    <div class="css_tr">
-                        <div class="css_td">內容：</div>
-                        <div class="css_td">A. 賞鯨+登島+環繞龜山島    B. 船票+報關+專業解說 C. 200萬意外險 D. 200萬團體傷害險</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div style="width:100%;height:10vh;"></div>
-    <div class="item">
-        <div class="item-up-1">
-            <div class="all">
-                <div class="img img-04">
-                    <div class="item-up-2">401： 401高地+登島+繞島</div>
-                </div>
-            </div>
-        </div>
-        <div class="item-down"></div>
-        <div class="item-up-3">
-            <div class="all">
-                <div class="css_table">
-                    <div class="css_tr">
-                        <div class="css_td" style="width:4rem;">船班：</div>
-                        <div class="css_td">0 8 : 0 0 <br />(5/1日正式開放,現在接受預約)</div>
-                    </div>
-                    <div class="css_tr">
-                        <div class="css_td">時間：</div>
-                        <div class="css_td">約 8 小時</div>
-                    </div>
-                    <div class="css_tr">
-                        <div class="css_td">費用：</div>
-                        <div class="css_td">每人 $1500(不含清潔費)<br />另有網路預購鯨喜價：請來電洽詢</div>
-                    </div>
-                    <div class="css_tr">
-                        <div class="css_td">內容：</div>
-                        <div class="css_td">A.401高地+登龜山島+ 環繞龜山島 + 船票 B. 專業解說 C. 200萬意外險 D. 200萬團體傷害險</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <div style="width:100%;height:10vh;"></div>
     <div class="item-2">
         <div class="all">
@@ -520,6 +629,18 @@
     </div>
 </body>
 <script>
+    function myResize() {
+        document.getElementById("pc").style.display = 'none';
+        document.getElementById("mobile").style.display = 'none';
+        if (window.innerWidth > 799) {
+            document.getElementById("pc").style.display = 'block';
+        } else {
+            document.getElementById("mobile").style.display = 'block';
+        }
+    }
+
+    myResize();
+
     var swiper = new Swiper('#video-view', {
         slidesPerView: 1,
         slidesPerGroup: 1,
